@@ -1,0 +1,981 @@
+12-08-2019 18:20:19.06296[0][4] - Elapsed time: 12.315 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+12-08-2019 18:20:19.08694[4][4] - Elapsed time: 23.983 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+12-08-2019 18:20:19.09468[4][4] - Elapsed time: 7.736 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+12-08-2019 18:20:19.09592[4][4] - Elapsed time: 1.246 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+12-08-2019 18:20:19.10139[4][4] - Elapsed time: 5.465 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+12-08-2019 18:20:19.10148[4][4] - Elapsed time: 0.098 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+12-08-2019 18:20:19.10188[0][4] - Elapsed time: 0.397 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = af4e307648fdce666656874bc69e91d1 
+-----------------------
+12-08-2019 18:20:19.10195[4][4] - Elapsed time: 0.068 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'hayyyya'. 
+-----------------------
+12-08-2019 18:20:19.10206[4][4] - Elapsed time: 0.111 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+12-08-2019 18:20:19.10213[4][4] - Elapsed time: 0.072 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+12-08-2019 18:20:19.10221[3][4] - Elapsed time: 0.078 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `dbchatbot2`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+12-08-2019 18:20:19.10411[1][4] - Elapsed time: 1.898 milliseconds
+[intialise_conversation.php][check_set_convo_id][653]
+Cannot find CONVO ID. Using default: af4e307648fdce666656874bc69e91d1 
+-----------------------
+12-08-2019 18:20:19.10420[2][4] - Elapsed time: 0.089 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+12-08-2019 18:20:19.10426[3][4] - Elapsed time: 0.066 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `dbchatbot2`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+12-08-2019 18:20:19.10481[4][4] - Elapsed time: 0.544 milliseconds
+[PDO_functions.php][db_fetch][132]
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/clone/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbchatbot2.bots' doesn't exist
+SQL: SELECT * FROM `dbchatbot2`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbchatbot2.bots' doesn't exist
+)
+
+ 
+-----------------------
+12-08-2019 18:20:19.10507[1][4] - Elapsed time: 0.260 milliseconds
+[intialise_conversation.php][check_set_bot][622]
+ERROR - Cannot find bot id: 1 
+-----------------------
+12-08-2019 18:20:19.10514[2][4] - Elapsed time: 0.069 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+12-08-2019 18:20:19.10580[2][4] - Elapsed time: 0.665 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+12-08-2019 18:20:19.10649[3][4] - Elapsed time: 0.690 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #277 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Seeker'  , 'af4e307648fdce666656874bc69e91d1'   , 1 , '0'        , '::1', ''      , 'PostmanRuntime/7.6.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+12-08-2019 18:20:19.10699[3][4] - Elapsed time: 0.502 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `dbchatbot2`.`client_properties` WHERE `user_id` = 277 AND `bot_id` = 1; 
+-----------------------
+12-08-2019 18:20:19.10789[2][4] - Elapsed time: 0.900 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+12-08-2019 18:20:19.10822[2][4] - Elapsed time: 0.322 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on hayyyya. 
+-----------------------
+12-08-2019 18:20:19.10835[2][4] - Elapsed time: 0.137 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+12-08-2019 18:20:19.11231[4][4] - Elapsed time: 3.957 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'hayyyya' 
+-----------------------
+12-08-2019 18:20:19.11320[4][4] - Elapsed time: 0.889 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HAYYYYA' 
+-----------------------
+12-08-2019 18:20:19.11328[2][4] - Elapsed time: 0.083 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: HAYYYYA
+Convo id: af4e307648fdce666656874bc69e91d1
+Bot id: 1
+Format:  
+-----------------------
+12-08-2019 18:20:19.11335[4][4] - Elapsed time: 0.067 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+12-08-2019 18:20:19.11341[2][4] - Elapsed time: 0.061 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+12-08-2019 18:20:19.11349[3][4] - Elapsed time: 0.081 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `dbchatbot2`.`conversation_log` WHERE `user_id` = 277 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+12-08-2019 18:20:19.11473[4][4] - Elapsed time: 1.239 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+12-08-2019 18:20:19.11614[2][4] - Elapsed time: 1.412 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+12-08-2019 18:20:19.11624[3][4] - Elapsed time: 0.101 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `dbchatbot2`.`bots` WHERE bot_id = 1; 
+-----------------------
+12-08-2019 18:20:19.11680[4][4] - Elapsed time: 0.557 milliseconds
+[PDO_functions.php][db_fetch][132]
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/clone/chatbot/core/conversation/intialise_conversation.php
+Function: load_bot_config
+Line #: 353
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbchatbot2.bots' doesn't exist
+SQL: SELECT * FROM `dbchatbot2`.`bots` WHERE bot_id = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbchatbot2.bots' doesn't exist
+)
+
+ 
+-----------------------
+12-08-2019 18:20:19.11709[1][4] - Elapsed time: 0.292 milliseconds
+[intialise_conversation.php][Called outside of function][355]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/clone/chatbot/core/conversation/intialise_conversation.php on Line 355 
+-----------------------
+12-08-2019 18:20:19.11730[4][4] - Elapsed time: 0.204 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+12-08-2019 18:20:19.11738[0][4] - Elapsed time: 0.089 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+12-08-2019 18:20:19.11743[0][4] - Elapsed time: 0.050 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 4 
+-----------------------
+12-08-2019 18:20:19.11748[0][4] - Elapsed time: 0.050 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = HAYYYYA: raw say = hayyyya 
+-----------------------
+12-08-2019 18:20:19.11754[4][4] - Elapsed time: 0.053 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+12-08-2019 18:20:19.11759[2][4] - Elapsed time: 0.052 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'HAYYYYA' to the front of the [user_say] array 
+-----------------------
+12-08-2019 18:20:19.11778[4][4] - Elapsed time: 0.187 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+12-08-2019 18:20:19.11788[0][4] - Elapsed time: 0.104 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = hayyyya, RAW say = hayyyya 
+-----------------------
+12-08-2019 18:20:19.11794[2][4] - Elapsed time: 0.056 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'hayyyya' to the front of the [input] array 
+-----------------------
+12-08-2019 18:20:19.11800[4][4] - Elapsed time: 0.062 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+12-08-2019 18:20:19.11808[4][4] - Elapsed time: 0.079 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+12-08-2019 18:20:19.11813[4][4] - Elapsed time: 0.053 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'HAYYYYA' 
+-----------------------
+12-08-2019 18:20:19.11825[4][4] - Elapsed time: 0.119 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HAYYYYA' 
+-----------------------
+12-08-2019 18:20:19.11830[4][4] - Elapsed time: 0.056 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+12-08-2019 18:20:19.11927[4][4] - Elapsed time: 0.965 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+12-08-2019 18:20:19.11943[3][4] - Elapsed time: 0.156 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `dbchatbot2`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 'af4e307648fdce666656874bc69e91d1'
+    AND (
+        'HAYYYYA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+12-08-2019 18:20:19.12016[2][4] - Elapsed time: 0.735 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+12-08-2019 18:20:19.12024[4][4] - Elapsed time: 0.078 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+12-08-2019 18:20:19.12029[4][4] - Elapsed time: 0.054 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = . 
+-----------------------
+12-08-2019 18:20:19.12128[4][4] - Elapsed time: 0.988 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+12-08-2019 18:20:19.12143[3][4] - Elapsed time: 0.145 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `dbchatbot2`.`aiml` WHERE
+    bot_id = 1 AND (
+        'HAYYYYA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE ''
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+12-08-2019 18:20:19.12202[0][4] - Elapsed time: 0.597 milliseconds
+[PDO_functions.php][db_fetchAll][202]
+An error was generated while extracting multiple rows of data from the database in file /opt/lampp/htdocs/clone/chatbot/core/aiml/find_aiml.php at line 1053, in the function find_aiml_matches.
+SQL: SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `dbchatbot2`.`aiml` WHERE
+    bot_id = 1 AND (
+        'HAYYYYA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE ''
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC;
+Params: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDO_statement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'filename' in 'field list'
+)
+
+ 
+-----------------------
+12-08-2019 18:20:19.12209[3][4] - Elapsed time: 0.071 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+12-08-2019 18:20:19.12217[1][4] - Elapsed time: 0.079 milliseconds
+[find_aiml.php][Called outside of function][1055]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/clone/chatbot/core/aiml/find_aiml.php on Line 1055 
+-----------------------
+12-08-2019 18:20:19.12239[1][4] - Elapsed time: 0.221 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+12-08-2019 18:20:19.12246[4][4] - Elapsed time: 0.066 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+12-08-2019 18:20:19.12252[4][4] - Elapsed time: 0.058 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = '' 
+-----------------------
+12-08-2019 18:20:19.12319[2][4] - Elapsed time: 0.675 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+12-08-2019 18:20:19.12326[1][4] - Elapsed time: 0.069 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input 'HAYYYYA' to the unknown_inputs table. 
+-----------------------
+12-08-2019 18:20:19.12425[4][4] - Elapsed time: 0.986 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+12-08-2019 18:20:19.12433[1][4] - Elapsed time: 0.081 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+12-08-2019 18:20:19.12440[4][4] - Elapsed time: 0.074 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+12-08-2019 18:20:19.12562[4][4] - Elapsed time: 1.215 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => No AIML category found. This is a Default Response.
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+12-08-2019 18:20:19.12574[2][4] - Elapsed time: 0.123 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => No AIML category found. This is a Default Response.
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+12-08-2019 18:20:19.12631[4][4] - Elapsed time: 0.567 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => No AIML category found. This is a Default Response.
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+12-08-2019 18:20:19.12639[2][4] - Elapsed time: 0.079 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+12-08-2019 18:20:19.12655[4][4] - Elapsed time: 0.165 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+12-08-2019 18:20:19.12662[3][4] - Elapsed time: 0.071 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+12-08-2019 18:20:19.12668[2][4] - Elapsed time: 0.059 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+12-08-2019 18:20:19.12673[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+12-08-2019 18:20:19.12678[4][4] - Elapsed time: 0.049 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+12-08-2019 18:20:19.12685[2][4] - Elapsed time: 0.073 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => HAYYYYA
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => No AIML category found. This is a Default Response.
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => hayyyya
+)
+ 
+-----------------------
+12-08-2019 18:20:19.12692[2][4] - Elapsed time: 0.064 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+12-08-2019 18:20:19.12697[2][4] - Elapsed time: 0.056 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+12-08-2019 18:20:19.12729[4][4] - Elapsed time: 0.318 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>No AIML category found. This is a Default Response.</text></template> 
+-----------------------
+12-08-2019 18:20:19.12748[2][4] - Elapsed time: 0.192 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+12-08-2019 18:20:19.12763[4][4] - Elapsed time: 0.144 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>No AIML category found. This is a Default Response.</text></template>
+ 
+-----------------------
+12-08-2019 18:20:19.12770[4][4] - Elapsed time: 0.071 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+12-08-2019 18:20:19.12784[2][4] - Elapsed time: 0.139 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+12-08-2019 18:20:19.12793[4][4] - Elapsed time: 0.090 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>No AIML category found. This is a Default Response.</text> 
+-----------------------
+12-08-2019 18:20:19.12799[4][4] - Elapsed time: 0.060 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+12-08-2019 18:20:19.12804[4][4] - Elapsed time: 0.051 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+12-08-2019 18:20:19.12809[2][4] - Elapsed time: 0.055 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+12-08-2019 18:20:19.12816[4][4] - Elapsed time: 0.064 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'No AIML category found. This is a Default Response.' to the response array. tag name is text 
+-----------------------
+12-08-2019 18:20:19.12822[2][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-08-2019 18:20:19.12827[2][4] - Elapsed time: 0.058 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => No AIML category found. This is a Default Response.
+)
+
+ 
+-----------------------
+12-08-2019 18:20:19.12833[4][4] - Elapsed time: 0.056 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-08-2019 18:20:19.12839[4][4] - Elapsed time: 0.063 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'No AIML category found. This is a Default Response.' 
+-----------------------
+12-08-2019 18:20:19.12845[4][4] - Elapsed time: 0.056 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'No AIML category found. This is a Default Response.' to the response array. tag name is template. 
+-----------------------
+12-08-2019 18:20:19.12851[2][4] - Elapsed time: 0.063 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-08-2019 18:20:19.12857[2][4] - Elapsed time: 0.057 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => No AIML category found. This is a Default Response.
+)
+
+ 
+-----------------------
+12-08-2019 18:20:19.12863[4][4] - Elapsed time: 0.060 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-08-2019 18:20:19.12870[4][4] - Elapsed time: 0.072 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'No AIML category found. This is a Default Response.' 
+-----------------------
+12-08-2019 18:20:19.12878[4][4] - Elapsed time: 0.081 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: No AIML category found. This is a Default Response. 
+-----------------------
+12-08-2019 18:20:19.12887[4][4] - Elapsed time: 0.086 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+12-08-2019 18:20:19.12893[4][4] - Elapsed time: 0.057 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+12-08-2019 18:20:19.12899[2][4] - Elapsed time: 0.062 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'No AIML category found. This is a Default Response.' to the front of the [that_raw] array 
+-----------------------
+12-08-2019 18:20:19.12908[4][4] - Elapsed time: 0.093 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+12-08-2019 18:20:19.12952[2][4] - Elapsed time: 0.437 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'No AIML category found. This is a Default Response.' to the front of the [that] array 
+-----------------------
+12-08-2019 18:20:19.12961[4][4] - Elapsed time: 0.088 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+12-08-2019 18:20:19.12971[4][4] - Elapsed time: 0.104 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'No AIML category found.' 
+-----------------------
+12-08-2019 18:20:19.12977[4][4] - Elapsed time: 0.062 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'No AIML category found.' 
+-----------------------
+12-08-2019 18:20:19.12993[4][4] - Elapsed time: 0.162 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'NO AIML CATEGORY FOUND' 
+-----------------------
+12-08-2019 18:20:19.13001[4][4] - Elapsed time: 0.078 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'NO AIML CATEGORY FOUND' 
+-----------------------
+12-08-2019 18:20:19.13007[4][4] - Elapsed time: 0.059 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'This is a Default Response.' 
+-----------------------
+12-08-2019 18:20:19.13012[4][4] - Elapsed time: 0.051 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'This is a Default Response.' 
+-----------------------
+12-08-2019 18:20:19.13025[4][4] - Elapsed time: 0.126 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'THIS IS A DEFAULT RESPONSE' 
+-----------------------
+12-08-2019 18:20:19.13030[4][4] - Elapsed time: 0.053 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'THIS IS A DEFAULT RESPONSE' 
+-----------------------
+12-08-2019 18:20:19.13038[2][4] - Elapsed time: 0.079 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'No AIML category found. This is a Default Response.' to the front of the [parsed_template] array 
+-----------------------
+12-08-2019 18:20:19.13044[4][4] - Elapsed time: 0.062 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+12-08-2019 18:20:19.13052[2][4] - Elapsed time: 0.077 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'No AIML category found. This is a Default Response.' to the front of the [template] array 
+-----------------------
+12-08-2019 18:20:19.13058[4][4] - Elapsed time: 0.058 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+12-08-2019 18:20:19.13066[2][4] - Elapsed time: 0.079 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+12-08-2019 18:20:19.13075[3][4] - Elapsed time: 0.090 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `dbchatbot2`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'hayyyya',
+      'No AIML category found. This is a Default Response.',
+      277,
+      'af4e307648fdce666656874bc69e91d1',
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+12-08-2019 18:20:19.13492[4][4] - Elapsed time: 4.169 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+12-08-2019 18:20:19.13550[4][4] - Elapsed time: 0.586 milliseconds
+[PDO_functions.php][db_fetch][132]
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/clone/chatbot/core/conversation/display_conversation.php
+Function: get_conversation_to_display
+Line #: 36
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbchatbot2.bots' doesn't exist
+SQL: SELECT `bot_name` FROM `bots` WHERE `bot_id` = 1 limit 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbchatbot2.bots' doesn't exist
+)
+
+ 
+-----------------------
+12-08-2019 18:20:19.13581[3][4] - Elapsed time: 0.307 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `dbchatbot2`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  
+-----------------------
+12-08-2019 18:20:19.13719[2][4] - Elapsed time: 1.379 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+12-08-2019 18:20:19.13728[4][4] - Elapsed time: 0.092 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as json 
+-----------------------
+12-08-2019 18:20:19.13734[2][4] - Elapsed time: 0.058 milliseconds
+[display_conversation.php][get_json][150]
+Outputting response as JSON 
+-----------------------
+12-08-2019 18:20:19.13743[4][4] - Elapsed time: 0.097 milliseconds
+[display_conversation.php][get_json][164]
+Returning JSON string: {"convo_id":"af4e307648fdce666656874bc69e91d1","usersay":"hayyyya","botsay":"No AIML category found. This is a Default Response.","botData":{"convo_id":"af4e307648fdce666656874bc69e91d1","format":"json","bot_id":1,"user_id":"277","totallines":1,"user_name":"Seeker","rawSay":"hayyyya","conversation_lines":null,"remember_up_to":null,"debugemail":null,"debug_level":null,"debugmode":1,"save_state":null,"default_aiml_pattern":null,"bot_parent_id":null,"aimlData":{"aiml_id":"-1","bot_id":1,"pattern":"no results","thatpattern":"","template":"No AIML category found. This is a Default Response.","topic":"","score":261,"track_score":"current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)"}}} 
+-----------------------
+12-08-2019 18:20:19.13841[2][4] - Elapsed time: 0.977 milliseconds
+[conversation_start.php][Called outside of function][260]
+Closing Database 
+-----------------------
+12-08-2019 18:20:19.13857[0][4] - Elapsed time: 0.159 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 87.839 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => hayyyya
+    [conversation] => Array
+        (
+            [convo_id] => af4e307648fdce666656874bc69e91d1
+            [format] => json
+            [bot_id] => 1
+            [user_id] => 277
+            [totallines] => 1
+            [user_name] => Seeker
+            [rawSay] => hayyyya
+            [conversation_lines] => 
+            [remember_up_to] => 
+            [debugemail] => 
+            [debug_level] => 
+            [debugmode] => 1
+            [save_state] => 
+            [default_aiml_pattern] => 
+            [bot_parent_id] => 
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => No AIML category found. This is a Default Response.
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => hayyyya
+            [lookingfor] => HAYYYYA
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => No AIML category found. This is a Default Response.
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => No AIML category found. This is a Default Response.
+        )
+
+    [bot_properties] => Array
+        (
+            [age] => 
+            [baseballteam] => 
+            [birthday] => 
+            [birthplace] => 
+            [botmaster] => 
+            [boyfriend] => 
+            [build] => 
+            [celebrities] => 
+            [celebrity] => 
+            [class] => 
+            [email] => 
+            [emotions] => 
+            [ethics] => 
+            [etype] => 
+            [family] => 
+            [favoriteactor] => 
+            [favoriteactress] => 
+            [favoriteartist] => 
+            [favoriteauthor] => 
+            [favoriteband] => 
+            [favoritebook] => 
+            [favoritecolor] => 
+            [favoritefood] => 
+            [favoritemovie] => 
+            [favoritemusician] => 
+            [favoritesong] => 
+            [favoritesport] => 
+            [feelings] => 
+            [footballteam] => 
+            [forfun] => 
+            [friend] => 
+            [friends] => 
+            [gender] => 
+            [genus] => 
+            [girlfriend] => 
+            [hockeyteam] => 
+            [kindmusic] => 
+            [kingdom] => 
+            [language] => 
+            [location] => 
+            [looklike] => 
+            [loves] => 
+            [master] => 
+            [name] => husna
+            [nationality] => 
+            [order] => 
+            [orientation] => 
+            [party] => 
+            [phylum] => 
+            [president] => 
+            [question] => 
+            [religion] => 
+            [sign] => 
+            [size] => 
+            [species] => 
+            [talkabout] => 
+            [version] => 
+            [vocabulary] => 
+            [wear] => 
+            [website] => 
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => ::1
+            [name] => Seeker
+        )
+
+    [time_start] => 1565626819.0506
+    [user_say] => Array
+        (
+            [1] => HAYYYYA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => hayyyya
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => This is a Default Response.
+                    [3] => No AIML category found.
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => THIS IS A DEFAULT RESPONSE
+                    [2] => NO AIML CATEGORY FOUND
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => No AIML category found. This is a Default Response.
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => No AIML category found. This is a Default Response.
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => {"convo_id":"af4e307648fdce666656874bc69e91d1","usersay":"hayyyya","botsay":"No AIML category found. This is a Default Response.","botData":{"convo_id":"af4e307648fdce666656874bc69e91d1","format":"json","bot_id":1,"user_id":"277","totallines":1,"user_name":"Seeker","rawSay":"hayyyya","conversation_lines":null,"remember_up_to":null,"debugemail":null,"debug_level":null,"debugmode":1,"save_state":null,"default_aiml_pattern":null,"bot_parent_id":null,"aimlData":{"aiml_id":"-1","bot_id":1,"pattern":"no results","thatpattern":"","template":"No AIML category found. This is a Default Response.","topic":"","score":261,"track_score":"current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)"}}}
+)
+
+-----------------------
+Total execution time: 87.839 Milliseconds. Goodbye.

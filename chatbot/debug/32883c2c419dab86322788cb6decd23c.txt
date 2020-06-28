@@ -1,0 +1,251 @@
+13-08-2019 10:56:51.79888[1][4] - Elapsed time: 9.753 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:56:51.80069[0][4] - Elapsed time: 1.811 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+13-08-2019 10:56:51.81817[4][4] - Elapsed time: 17.479 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+13-08-2019 10:56:51.82297[4][4] - Elapsed time: 4.803 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+13-08-2019 10:56:51.82388[4][4] - Elapsed time: 0.912 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+13-08-2019 10:56:51.82937[4][4] - Elapsed time: 5.491 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+13-08-2019 10:56:51.82949[4][4] - Elapsed time: 0.117 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+13-08-2019 10:56:51.82987[0][4] - Elapsed time: 0.381 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = 32883c2c419dab86322788cb6decd23c 
+-----------------------
+13-08-2019 10:56:51.82994[4][4] - Elapsed time: 0.067 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said ''. 
+-----------------------
+13-08-2019 10:56:51.82999[4][4] - Elapsed time: 0.056 milliseconds
+[intialise_conversation.php][intialise_convoArray][29]
+Intialising conversation 
+-----------------------
+13-08-2019 10:56:51.83005[4][4] - Elapsed time: 0.058 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank topic array 
+-----------------------
+13-08-2019 10:56:51.83012[4][4] - Elapsed time: 0.071 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+13-08-2019 10:56:51.83019[4][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank star array 
+-----------------------
+13-08-2019 10:56:51.83025[4][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+13-08-2019 10:56:51.83032[4][4] - Elapsed time: 0.067 milliseconds
+[intialise_conversation.php][load_blank_stack][85]
+Loading blank stack 
+-----------------------
+13-08-2019 10:56:51.83038[4][4] - Elapsed time: 0.061 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+13-08-2019 10:56:51.83045[3][4] - Elapsed time: 0.067 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `dbChatbotApk`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+13-08-2019 10:56:51.83220[2][4] - Elapsed time: 1.750 milliseconds
+[handle_user.php][load_new_client_defaults][24]
+Loading client defaults 
+-----------------------
+13-08-2019 10:56:51.83227[2][4] - Elapsed time: 0.075 milliseconds
+[conversation_start.php][Called outside of function][254]
+Conversation initialized, awaiting user 
+-----------------------
+13-08-2019 10:56:51.83233[2][4] - Elapsed time: 0.061 milliseconds
+[conversation_start.php][Called outside of function][260]
+Closing Database 
+-----------------------
+13-08-2019 10:56:51.83238[0][4] - Elapsed time: 0.045 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 43.234 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [conversation] => Array
+        (
+        )
+
+    [topic] => Array
+        (
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [11] => 
+        )
+
+    [that] => Array
+        (
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [11] => 
+        )
+
+    [star] => Array
+        (
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [11] => 
+        )
+
+    [input] => Array
+        (
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [11] => 
+        )
+
+    [stack] => Array
+        (
+            [top] => om
+            [second] => om
+            [third] => om
+            [fourth] => om
+            [fifth] => om
+            [sixth] => om
+            [seventh] => om
+            [last] => om
+        )
+
+    [bot_properties] => Array
+        (
+            [age] => 
+            [baseballteam] => 
+            [birthday] => 
+            [birthplace] => 
+            [botmaster] => 
+            [boyfriend] => 
+            [build] => 
+            [celebrities] => 
+            [celebrity] => 
+            [class] => 
+            [email] => 
+            [emotions] => 
+            [ethics] => 
+            [etype] => 
+            [family] => 
+            [favoriteactor] => 
+            [favoriteactress] => 
+            [favoriteartist] => 
+            [favoriteauthor] => 
+            [favoriteband] => 
+            [favoritebook] => 
+            [favoritecolor] => 
+            [favoritefood] => 
+            [favoritemovie] => 
+            [favoritemusician] => 
+            [favoritesong] => 
+            [favoritesport] => 
+            [feelings] => 
+            [footballteam] => 
+            [forfun] => 
+            [friend] => 
+            [friends] => 
+            [gender] => 
+            [genus] => 
+            [girlfriend] => 
+            [hockeyteam] => 
+            [kindmusic] => 
+            [kingdom] => 
+            [language] => 
+            [location] => 
+            [looklike] => 
+            [loves] => 
+            [master] => 
+            [name] => husna
+            [nationality] => 
+            [order] => 
+            [orientation] => 
+            [party] => 
+            [phylum] => 
+            [president] => 
+            [question] => 
+            [religion] => 
+            [sign] => 
+            [size] => 
+            [species] => 
+            [talkabout] => 
+            [version] => 
+            [vocabulary] => 
+            [wear] => 
+            [website] => 
+        )
+
+    [client_properties] => Array
+        (
+            [name] => Seeker
+            [id] => 32883c2c419dab86322788cb6decd23c
+        )
+
+    [send_to_user] => User input not detected.
+)
+
+-----------------------
+Total execution time: 43.234 Milliseconds. Goodbye.

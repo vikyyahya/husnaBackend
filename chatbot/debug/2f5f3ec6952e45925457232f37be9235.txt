@@ -1,0 +1,343 @@
+13-08-2019 10:57:12.58552[1][4] - Elapsed time: 9.579 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.58737[0][4] - Elapsed time: 1.852 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+13-08-2019 10:57:12.60702[4][4] - Elapsed time: 19.655 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+13-08-2019 10:57:12.61428[4][4] - Elapsed time: 7.259 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+13-08-2019 10:57:12.61545[4][4] - Elapsed time: 1.173 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+13-08-2019 10:57:12.62066[4][4] - Elapsed time: 5.206 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+13-08-2019 10:57:12.62077[4][4] - Elapsed time: 0.107 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+13-08-2019 10:57:12.62116[0][4] - Elapsed time: 0.390 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = 2f5f3ec6952e45925457232f37be9235 
+-----------------------
+13-08-2019 10:57:12.62125[4][4] - Elapsed time: 0.097 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'aa'. 
+-----------------------
+13-08-2019 10:57:12.62138[4][4] - Elapsed time: 0.122 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+13-08-2019 10:57:12.62145[4][4] - Elapsed time: 0.071 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+13-08-2019 10:57:12.62152[3][4] - Elapsed time: 0.074 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `dbChatbotApk`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+13-08-2019 10:57:12.62335[1][4] - Elapsed time: 1.824 milliseconds
+[intialise_conversation.php][check_set_convo_id][653]
+Cannot find CONVO ID. Using default: 2f5f3ec6952e45925457232f37be9235 
+-----------------------
+13-08-2019 10:57:12.62343[2][4] - Elapsed time: 0.086 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+13-08-2019 10:57:12.62348[3][4] - Elapsed time: 0.044 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+13-08-2019 10:57:12.62354[1][4] - Elapsed time: 0.066 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.62474[2][4] - Elapsed time: 1.201 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+13-08-2019 10:57:12.62481[2][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+13-08-2019 10:57:12.62487[1][4] - Elapsed time: 0.065 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.65899[2][4] - Elapsed time: 34.115 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+13-08-2019 10:57:12.65991[3][4] - Elapsed time: 0.922 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #274 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Pencari'  , '2f5f3ec6952e45925457232f37be9235'   , 1 , '0'        , '127.0.0.1', ''      , 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+13-08-2019 10:57:12.66267[3][4] - Elapsed time: 2.762 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `dbChatbotApk`.`client_properties` WHERE `user_id` = 274 AND `bot_id` = 1; 
+-----------------------
+13-08-2019 10:57:12.66358[2][4] - Elapsed time: 0.914 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+13-08-2019 10:57:12.66381[2][4] - Elapsed time: 0.224 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on aa. 
+-----------------------
+13-08-2019 10:57:12.66390[2][4] - Elapsed time: 0.095 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+13-08-2019 10:57:12.69250[4][4] - Elapsed time: 28.591 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'aa' 
+-----------------------
+13-08-2019 10:57:12.69312[4][4] - Elapsed time: 0.627 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'AA' 
+-----------------------
+13-08-2019 10:57:12.69318[2][4] - Elapsed time: 0.055 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: AA
+Convo id: 2f5f3ec6952e45925457232f37be9235
+Bot id: 1
+Format:  
+-----------------------
+13-08-2019 10:57:12.69326[4][4] - Elapsed time: 0.084 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+13-08-2019 10:57:12.69332[2][4] - Elapsed time: 0.060 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+13-08-2019 10:57:12.69337[3][4] - Elapsed time: 0.052 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `dbChatbotApk`.`conversation_log` WHERE `user_id` = 274 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+13-08-2019 10:57:12.78153[4][4] - Elapsed time: 88.159 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+13-08-2019 10:57:12.78249[2][4] - Elapsed time: 0.960 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+13-08-2019 10:57:12.78256[3][4] - Elapsed time: 0.068 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1; 
+-----------------------
+13-08-2019 10:57:12.78263[1][4] - Elapsed time: 0.069 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.78363[4][4] - Elapsed time: 1.004 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+13-08-2019 10:57:12.78372[0][1] - Elapsed time: 0.089 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+13-08-2019 10:57:12.78376[0][1] - Elapsed time: 0.033 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 1 
+-----------------------
+13-08-2019 10:57:12.78378[0][1] - Elapsed time: 0.029 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = AA: raw say = aa 
+-----------------------
+13-08-2019 10:57:12.78399[0][1] - Elapsed time: 0.207 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = aa, RAW say = aa 
+-----------------------
+13-08-2019 10:57:12.78417[1][1] - Elapsed time: 0.177 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.80297[1][1] - Elapsed time: 18.801 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.80575[1][1] - Elapsed time: 2.786 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+13-08-2019 10:57:12.82129[1][1] - Elapsed time: 15.534 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input 'AA' to the unknown_inputs table. 
+-----------------------
+13-08-2019 10:57:12.82149[1][1] - Elapsed time: 0.198 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.82241[1][1] - Elapsed time: 0.923 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+13-08-2019 10:57:12.82249[1][1] - Elapsed time: 0.081 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.82551[1][1] - Elapsed time: 3.016 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.82631[1][1] - Elapsed time: 0.805 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.82825[1][1] - Elapsed time: 1.940 milliseconds
+[PDO_functions.php][Called outside of function][89]
+PHP ERROR [Notice] -Undefined variable: dbh in /opt/lampp/htdocs/husna/library/PDO_functions.php on Line 89 
+-----------------------
+13-08-2019 10:57:12.83337[0][1] - Elapsed time: 5.120 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 257.354 milliseconds. 
+-----------------------
+Debug Level: 1
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [conversation] => Array
+        (
+            [convo_id] => 2f5f3ec6952e45925457232f37be9235
+            [bot_name] => Husna
+            [bot_id] => 1
+            [format] => json
+            [unknown_user] => Pencari
+            [user_id] => 274
+            [totallines] => 1
+            [user_name] => Pencari
+            [rawSay] => aa
+            [conversation_lines] => 2
+            [remember_up_to] => 10
+            [debugemail] => vikyyahya.id@gmail.com
+            [debug_level] => 1
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => RANDOM PICKUP LINE
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => Maaf saya tidak tahu, saya akan belajar lagi
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => aa
+            [lookingfor] => AA
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => Maaf saya tidak tahu, saya akan belajar lagi
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Maaf saya tidak tahu, saya akan belajar lagi
+        )
+
+    [topic] => Array
+        (
+            [1] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI
+                )
+
+        )
+
+    [input] => Array
+        (
+            [1] => aa
+        )
+
+    [stack] => Array
+        (
+            [top] => 
+            [last] => 
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 127.0.0.1
+            [name] => Pencari
+        )
+
+    [user_say] => Array
+        (
+            [1] => AA
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Maaf saya tidak tahu, saya akan belajar lagi
+                )
+
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Maaf saya tidak tahu, saya akan belajar lagi
+        )
+
+)
+
+-----------------------
+Total execution time: 257.354 Milliseconds. Goodbye.

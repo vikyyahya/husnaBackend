@@ -1,0 +1,2264 @@
+11-08-2019 11:48:42.53078[0][4] - Elapsed time: 9.209 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+11-08-2019 11:48:42.54482[4][4] - Elapsed time: 14.031 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+11-08-2019 11:48:42.54936[4][4] - Elapsed time: 4.549 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+11-08-2019 11:48:42.55015[4][4] - Elapsed time: 0.784 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+11-08-2019 11:48:42.55342[4][4] - Elapsed time: 3.276 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+11-08-2019 11:48:42.55348[4][4] - Elapsed time: 0.059 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+11-08-2019 11:48:42.55381[0][4] - Elapsed time: 0.328 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = d65dfdaa19f3756393e6745733e7cda8 
+-----------------------
+11-08-2019 11:48:42.55386[4][4] - Elapsed time: 0.046 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'test link'. 
+-----------------------
+11-08-2019 11:48:42.55393[4][4] - Elapsed time: 0.076 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+11-08-2019 11:48:42.55397[4][4] - Elapsed time: 0.039 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+11-08-2019 11:48:42.55401[3][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `dbChatbotApk`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+11-08-2019 11:48:42.55579[4][4] - Elapsed time: 1.782 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: d65dfdaa19f3756393e6745733e7cda8 
+-----------------------
+11-08-2019 11:48:42.55587[2][4] - Elapsed time: 0.076 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+11-08-2019 11:48:42.55592[3][4] - Elapsed time: 0.048 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+11-08-2019 11:48:42.55647[4][4] - Elapsed time: 0.556 milliseconds
+[PDO_functions.php][db_fetch][132]
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/Program-O-master/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.bots' doesn't exist
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.bots' doesn't exist
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.55681[1][4] - Elapsed time: 0.331 milliseconds
+[intialise_conversation.php][check_set_bot][622]
+ERROR - Cannot find bot id: 1 
+-----------------------
+11-08-2019 11:48:42.55686[2][4] - Elapsed time: 0.050 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+11-08-2019 11:48:42.55747[3][4] - Elapsed time: 0.618 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `dbChatbotApk`.`client_properties` WHERE `user_id` = 272 AND `bot_id` = 1; 
+-----------------------
+11-08-2019 11:48:42.55807[2][4] - Elapsed time: 0.601 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+11-08-2019 11:48:42.55814[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on test. 
+-----------------------
+11-08-2019 11:48:42.55821[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+11-08-2019 11:48:42.56025[2][4] - Elapsed time: 2.030 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+11-08-2019 11:48:42.56036[2][4] - Elapsed time: 0.117 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on link. 
+-----------------------
+11-08-2019 11:48:42.56048[4][4] - Elapsed time: 0.123 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'test link' 
+-----------------------
+11-08-2019 11:48:42.56056[4][4] - Elapsed time: 0.080 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.56060[2][4] - Elapsed time: 0.038 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: TEST LINK
+Convo id: d65dfdaa19f3756393e6745733e7cda8
+Bot id: 1
+Format: json 
+-----------------------
+11-08-2019 11:48:42.56064[4][4] - Elapsed time: 0.040 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+11-08-2019 11:48:42.56067[2][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+11-08-2019 11:48:42.56072[3][4] - Elapsed time: 0.043 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `dbChatbotApk`.`conversation_log` WHERE `user_id` = 272 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+11-08-2019 11:48:42.56158[1][4] - Elapsed time: 0.866 milliseconds
+[intialise_conversation.php][load_that][804]
+Inputs returned:Array
+(
+    [0] => i am downloading
+    [1] => test link
+    [2] => test image
+    [3] => test link
+    [4] => First a b c d
+    [5] => firts a b s n n
+    [6] => firt a ba abab
+    [7] => explode ajajaja
+    [8] => eja haiiii
+    [9] => eha haiiiii
+)
+ 
+-----------------------
+11-08-2019 11:48:42.56163[4][4] - Elapsed time: 0.050 milliseconds
+[intialise_conversation.php][load_that][805]
+Loading previous responses into the ~THAT~ array. 
+-----------------------
+11-08-2019 11:48:42.56167[1][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][load_that][806]
+Responses returned:Array
+(
+    [0] => Maybe you should read the <a target="_new" href="http://www.alicebot.org/dont.html">DON\'T READ ME</a> too.
+    [1] => https://www.pandorabots.com/
+    [2] => https://www.w3schools.com/w3css/img_lights.jpg
+    [3] => https://www.pandorabots.com/
+    [4] => a b c d
+    [5] => Maaf saya tidak tahu, saya akan belajar lagi
+    [6] => Maaf saya tidak tahu, saya akan belajar lagi
+    [7] => ajajaja
+    [8] => haiiii
+    [9] => Maaf saya tidak tahu, saya akan belajar lagi
+)
+ 
+-----------------------
+11-08-2019 11:48:42.56174[2][4] - Elapsed time: 0.071 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56181[2][4] - Elapsed time: 0.067 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Maaf saya tidak tahu
+    [1] =>  saya akan belajar lagi
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56184[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56188[4][4] - Elapsed time: 0.037 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56191[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56194[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56203[4][4] - Elapsed time: 0.092 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56206[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56209[2][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56213[4][4] - Elapsed time: 0.039 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+11-08-2019 11:48:42.56221[4][4] - Elapsed time: 0.076 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56224[4][4] - Elapsed time: 0.035 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56231[4][4] - Elapsed time: 0.067 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56234[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56239[2][4] - Elapsed time: 0.051 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56242[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => haiiii
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56245[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56248[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'haiiii' 
+-----------------------
+11-08-2019 11:48:42.56251[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'haiiii' 
+-----------------------
+11-08-2019 11:48:42.56254[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'haiiii' 
+-----------------------
+11-08-2019 11:48:42.56259[4][4] - Elapsed time: 0.053 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HAIIII' 
+-----------------------
+11-08-2019 11:48:42.56262[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HAIIII' 
+-----------------------
+11-08-2019 11:48:42.56265[2][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'HAIIII' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56270[4][4] - Elapsed time: 0.052 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'HAIIII' 
+-----------------------
+11-08-2019 11:48:42.56273[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'HAIIII' 
+-----------------------
+11-08-2019 11:48:42.56278[4][4] - Elapsed time: 0.051 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HAIIII' 
+-----------------------
+11-08-2019 11:48:42.56281[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HAIIII' 
+-----------------------
+11-08-2019 11:48:42.56286[2][4] - Elapsed time: 0.044 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56289[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ajajaja
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56292[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56295[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ajajaja' 
+-----------------------
+11-08-2019 11:48:42.56297[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ajajaja' 
+-----------------------
+11-08-2019 11:48:42.56300[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ajajaja' 
+-----------------------
+11-08-2019 11:48:42.56306[4][4] - Elapsed time: 0.057 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'AJAJAJA' 
+-----------------------
+11-08-2019 11:48:42.56309[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'AJAJAJA' 
+-----------------------
+11-08-2019 11:48:42.56311[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'AJAJAJA' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56316[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'AJAJAJA' 
+-----------------------
+11-08-2019 11:48:42.56319[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'AJAJAJA' 
+-----------------------
+11-08-2019 11:48:42.56324[4][4] - Elapsed time: 0.049 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'AJAJAJA' 
+-----------------------
+11-08-2019 11:48:42.56327[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'AJAJAJA' 
+-----------------------
+11-08-2019 11:48:42.56331[2][4] - Elapsed time: 0.041 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56334[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Maaf saya tidak tahu
+    [1] =>  saya akan belajar lagi
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56337[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56340[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56343[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56346[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56353[4][4] - Elapsed time: 0.075 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56357[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56359[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56364[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56367[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56374[4][4] - Elapsed time: 0.065 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56376[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56381[2][4] - Elapsed time: 0.041 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56384[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Maaf saya tidak tahu
+    [1] =>  saya akan belajar lagi
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56386[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56389[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56392[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56395[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+11-08-2019 11:48:42.56402[4][4] - Elapsed time: 0.075 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56405[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56408[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56413[4][4] - Elapsed time: 0.047 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56416[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56422[4][4] - Elapsed time: 0.064 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56425[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+11-08-2019 11:48:42.56429[2][4] - Elapsed time: 0.042 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56432[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => a b c d
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56435[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56438[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'a b c d' 
+-----------------------
+11-08-2019 11:48:42.56441[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'a b c d' 
+-----------------------
+11-08-2019 11:48:42.56444[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'a b c d' 
+-----------------------
+11-08-2019 11:48:42.56449[4][4] - Elapsed time: 0.053 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'A B C D' 
+-----------------------
+11-08-2019 11:48:42.56452[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'A B C D' 
+-----------------------
+11-08-2019 11:48:42.56455[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'A B C D' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56459[4][4] - Elapsed time: 0.047 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'A B C D' 
+-----------------------
+11-08-2019 11:48:42.56462[4][4] - Elapsed time: 0.031 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'A B C D' 
+-----------------------
+11-08-2019 11:48:42.56468[4][4] - Elapsed time: 0.051 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'A B C D' 
+-----------------------
+11-08-2019 11:48:42.56470[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'A B C D' 
+-----------------------
+11-08-2019 11:48:42.56474[2][4] - Elapsed time: 0.042 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56478[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => https://www
+    [1] => pandorabots
+    [2] => com/
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56481[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56484[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'https://www pandorabots com/' 
+-----------------------
+11-08-2019 11:48:42.56487[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'https://www pandorabots com/' 
+-----------------------
+11-08-2019 11:48:42.56489[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'https://www pandorabots com/' 
+-----------------------
+11-08-2019 11:48:42.56497[4][4] - Elapsed time: 0.072 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56499[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56502[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'HTTPS WWW PANDORABOTS COM' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56507[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56510[4][4] - Elapsed time: 0.031 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56516[4][4] - Elapsed time: 0.058 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56519[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56522[2][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56526[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => https://www
+    [1] => w3schools
+    [2] => com/w3css/img_lights
+    [3] => jpg
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56528[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56532[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'https://www w3schools com/w3css/img_lights jpg' 
+-----------------------
+11-08-2019 11:48:42.56534[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'https://www w3schools com/w3css/img_lights jpg' 
+-----------------------
+11-08-2019 11:48:42.56538[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'https://www w3schools com/w3css/img_lights jpg' 
+-----------------------
+11-08-2019 11:48:42.56546[4][4] - Elapsed time: 0.082 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HTTPS WWW W3SCHOOLS COM W3CSS IMG LIGHTS JPG' 
+-----------------------
+11-08-2019 11:48:42.56549[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HTTPS WWW W3SCHOOLS COM W3CSS IMG LIGHTS JPG' 
+-----------------------
+11-08-2019 11:48:42.56551[2][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'HTTPS WWW W3SCHOOLS COM W3CSS IMG LIGHTS JPG' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56556[4][4] - Elapsed time: 0.049 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'HTTPS WWW W3SCHOOLS COM W3CSS IMG LIGHTS JPG' 
+-----------------------
+11-08-2019 11:48:42.56559[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'HTTPS WWW W3SCHOOLS COM W3CSS IMG LIGHTS JPG' 
+-----------------------
+11-08-2019 11:48:42.56566[4][4] - Elapsed time: 0.066 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HTTPS WWW W3SCHOOLS COM W3CSS IMG LIGHTS JPG' 
+-----------------------
+11-08-2019 11:48:42.56569[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HTTPS WWW W3SCHOOLS COM W3CSS IMG LIGHTS JPG' 
+-----------------------
+11-08-2019 11:48:42.56573[2][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56579[2][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => https://www
+    [1] => pandorabots
+    [2] => com/
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56582[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56585[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'https://www pandorabots com/' 
+-----------------------
+11-08-2019 11:48:42.56588[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'https://www pandorabots com/' 
+-----------------------
+11-08-2019 11:48:42.56591[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'https://www pandorabots com/' 
+-----------------------
+11-08-2019 11:48:42.56598[4][4] - Elapsed time: 0.069 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56601[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56603[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'HTTPS WWW PANDORABOTS COM' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56608[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56611[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56617[4][4] - Elapsed time: 0.057 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56620[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HTTPS WWW PANDORABOTS COM' 
+-----------------------
+11-08-2019 11:48:42.56624[2][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56627[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Maybe you should read the <a target="_new" href="http://www
+    [1] => alicebot
+    [2] => org/dont
+    [3] => html">DON\'T READ ME</a> too
+    [4] => 
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56630[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56633[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Maybe you should read the <a target="_new" href="http://www alicebot org/dont html">DON\'T READ ME</a> too ' 
+-----------------------
+11-08-2019 11:48:42.56636[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Maybe you should read the <a target="_new" href="http://www alicebot org/dont html">DON\'T READ ME</a> too ' 
+-----------------------
+11-08-2019 11:48:42.56639[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Maybe you should read the DON\'T READ ME too ' 
+-----------------------
+11-08-2019 11:48:42.56647[4][4] - Elapsed time: 0.076 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' 
+-----------------------
+11-08-2019 11:48:42.56650[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' 
+-----------------------
+11-08-2019 11:48:42.56652[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.56657[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' 
+-----------------------
+11-08-2019 11:48:42.56661[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' 
+-----------------------
+11-08-2019 11:48:42.56667[4][4] - Elapsed time: 0.064 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' 
+-----------------------
+11-08-2019 11:48:42.56670[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' 
+-----------------------
+11-08-2019 11:48:42.56674[4][4] - Elapsed time: 0.040 milliseconds
+[intialise_conversation.php][load_that][835]
+Loading previous user inputs into the ~INPUT~ array. 
+-----------------------
+11-08-2019 11:48:42.56679[2][4] - Elapsed time: 0.049 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56682[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => eha haiiiii
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56684[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56687[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'eha haiiiii' 
+-----------------------
+11-08-2019 11:48:42.56690[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'eha haiiiii' 
+-----------------------
+11-08-2019 11:48:42.56693[4][4] - Elapsed time: 0.029 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'eha haiiiii' 
+-----------------------
+11-08-2019 11:48:42.56699[4][4] - Elapsed time: 0.057 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'EHA HAIIIII' 
+-----------------------
+11-08-2019 11:48:42.56702[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'EHA HAIIIII' 
+-----------------------
+11-08-2019 11:48:42.56704[2][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'EHA HAIIIII' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56708[4][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+11-08-2019 11:48:42.56712[2][4] - Elapsed time: 0.046 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56715[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => eja haiiii
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56718[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56721[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'eja haiiii' 
+-----------------------
+11-08-2019 11:48:42.56724[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'eja haiiii' 
+-----------------------
+11-08-2019 11:48:42.56727[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'eja haiiii' 
+-----------------------
+11-08-2019 11:48:42.56732[4][4] - Elapsed time: 0.054 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'EJA HAIIII' 
+-----------------------
+11-08-2019 11:48:42.56735[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'EJA HAIIII' 
+-----------------------
+11-08-2019 11:48:42.56738[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'EJA HAIIII' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56742[2][4] - Elapsed time: 0.041 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56745[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => explode ajajaja
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56748[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56751[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'explode ajajaja' 
+-----------------------
+11-08-2019 11:48:42.56754[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'explode ajajaja' 
+-----------------------
+11-08-2019 11:48:42.56757[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'explode ajajaja' 
+-----------------------
+11-08-2019 11:48:42.56762[4][4] - Elapsed time: 0.057 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'EXPLODE AJAJAJA' 
+-----------------------
+11-08-2019 11:48:42.56765[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'EXPLODE AJAJAJA' 
+-----------------------
+11-08-2019 11:48:42.56768[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'EXPLODE AJAJAJA' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56772[2][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56775[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => firt a ba abab
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56778[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56781[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'firt a ba abab' 
+-----------------------
+11-08-2019 11:48:42.56784[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'firt a ba abab' 
+-----------------------
+11-08-2019 11:48:42.56786[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'firt a ba abab' 
+-----------------------
+11-08-2019 11:48:42.56792[4][4] - Elapsed time: 0.056 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'FIRT A BA ABAB' 
+-----------------------
+11-08-2019 11:48:42.56795[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'FIRT A BA ABAB' 
+-----------------------
+11-08-2019 11:48:42.56798[2][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'FIRT A BA ABAB' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56802[2][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56805[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => firts a b s n n
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56807[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56810[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'firts a b s n n' 
+-----------------------
+11-08-2019 11:48:42.56813[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'firts a b s n n' 
+-----------------------
+11-08-2019 11:48:42.56816[4][4] - Elapsed time: 0.029 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'firts a b s n n' 
+-----------------------
+11-08-2019 11:48:42.56821[4][4] - Elapsed time: 0.056 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'FIRTS A B S N N' 
+-----------------------
+11-08-2019 11:48:42.56824[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'FIRTS A B S N N' 
+-----------------------
+11-08-2019 11:48:42.56827[2][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'FIRTS A B S N N' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56831[2][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56834[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => First a b c d
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56837[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56840[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'First a b c d' 
+-----------------------
+11-08-2019 11:48:42.56843[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'First a b c d' 
+-----------------------
+11-08-2019 11:48:42.56845[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'First a b c d' 
+-----------------------
+11-08-2019 11:48:42.56851[4][4] - Elapsed time: 0.056 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'FIRST A B C D' 
+-----------------------
+11-08-2019 11:48:42.56854[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'FIRST A B C D' 
+-----------------------
+11-08-2019 11:48:42.56856[2][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'FIRST A B C D' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56860[2][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56863[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => test link
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56866[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56869[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'test link' 
+-----------------------
+11-08-2019 11:48:42.56872[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'test link' 
+-----------------------
+11-08-2019 11:48:42.56875[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'test link' 
+-----------------------
+11-08-2019 11:48:42.56880[4][4] - Elapsed time: 0.053 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.56883[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.56885[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'TEST LINK' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56890[2][4] - Elapsed time: 0.041 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56893[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => test image
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56895[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56898[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'test image' 
+-----------------------
+11-08-2019 11:48:42.56901[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'test image' 
+-----------------------
+11-08-2019 11:48:42.56904[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'test image' 
+-----------------------
+11-08-2019 11:48:42.56909[4][4] - Elapsed time: 0.054 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TEST IMAGE' 
+-----------------------
+11-08-2019 11:48:42.56912[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'TEST IMAGE' 
+-----------------------
+11-08-2019 11:48:42.56915[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'TEST IMAGE' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56919[2][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56922[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => test link
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56925[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56927[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'test link' 
+-----------------------
+11-08-2019 11:48:42.56930[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'test link' 
+-----------------------
+11-08-2019 11:48:42.56933[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'test link' 
+-----------------------
+11-08-2019 11:48:42.56938[4][4] - Elapsed time: 0.053 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.56941[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.56944[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'TEST LINK' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.56948[2][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.56951[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => i am downloading
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.56954[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.56957[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'i am downloading' 
+-----------------------
+11-08-2019 11:48:42.56960[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'i am downloading' 
+-----------------------
+11-08-2019 11:48:42.56962[4][4] - Elapsed time: 0.029 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'i am downloading' 
+-----------------------
+11-08-2019 11:48:42.56968[4][4] - Elapsed time: 0.058 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'I AM DOWNLOADING' 
+-----------------------
+11-08-2019 11:48:42.56971[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'I AM DOWNLOADING' 
+-----------------------
+11-08-2019 11:48:42.56974[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'I AM DOWNLOADING' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.57062[2][4] - Elapsed time: 0.878 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+11-08-2019 11:48:42.57067[3][4] - Elapsed time: 0.058 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1; 
+-----------------------
+11-08-2019 11:48:42.57109[4][4] - Elapsed time: 0.419 milliseconds
+[PDO_functions.php][db_fetch][132]
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/Program-O-master/chatbot/core/conversation/intialise_conversation.php
+Function: load_bot_config
+Line #: 353
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.bots' doesn't exist
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.bots' doesn't exist
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.57137[1][4] - Elapsed time: 0.282 milliseconds
+[intialise_conversation.php][Called outside of function][355]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/Program-O-master/chatbot/core/conversation/intialise_conversation.php on Line 355 
+-----------------------
+11-08-2019 11:48:42.59698[4][4] - Elapsed time: 25.609 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+11-08-2019 11:48:42.59711[0][4] - Elapsed time: 0.127 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+11-08-2019 11:48:42.59715[0][4] - Elapsed time: 0.035 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 4 
+-----------------------
+11-08-2019 11:48:42.59718[0][4] - Elapsed time: 0.031 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = TEST LINK: raw say = test link 
+-----------------------
+11-08-2019 11:48:42.59721[4][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+11-08-2019 11:48:42.59724[2][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'TEST LINK' to the front of the [user_say] array 
+-----------------------
+11-08-2019 11:48:42.59729[4][4] - Elapsed time: 0.046 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+11-08-2019 11:48:42.59735[0][4] - Elapsed time: 0.065 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = test link, RAW say = test link 
+-----------------------
+11-08-2019 11:48:42.59739[2][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'test link' to the front of the [input] array 
+-----------------------
+11-08-2019 11:48:42.59743[4][4] - Elapsed time: 0.045 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+11-08-2019 11:48:42.59747[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.59756[4][4] - Elapsed time: 0.089 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.59759[4][4] - Elapsed time: 0.035 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+11-08-2019 11:48:42.59848[4][4] - Elapsed time: 0.888 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+11-08-2019 11:48:42.59863[3][4] - Elapsed time: 0.146 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `dbChatbotApk`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 'd65dfdaa19f3756393e6745733e7cda8'
+    AND (
+        'TEST LINK' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+11-08-2019 11:48:42.59927[2][4] - Elapsed time: 0.641 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+11-08-2019 11:48:42.59934[4][4] - Elapsed time: 0.069 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+11-08-2019 11:48:42.59937[4][4] - Elapsed time: 0.033 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = . 
+-----------------------
+11-08-2019 11:48:42.60006[4][4] - Elapsed time: 0.687 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+11-08-2019 11:48:42.60019[3][4] - Elapsed time: 0.131 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `dbChatbotApk`.`aiml` WHERE
+    bot_id = 1 AND (
+        'TEST LINK' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'MAYBE YOU SHOULD READ THE DON T READ ME TOO' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE ''
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+11-08-2019 11:48:42.60116[3][4] - Elapsed time: 0.971 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+11-08-2019 11:48:42.60123[2][4] - Elapsed time: 0.070 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (2) potential AIML matches 
+-----------------------
+11-08-2019 11:48:42.60204[1][4] - Elapsed time: 0.810 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][35]
+Current THAT = MAYBE YOU SHOULD READ THE DON T READ ME TOO 
+-----------------------
+11-08-2019 11:48:42.60212[4][4] - Elapsed time: 0.084 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 2 rows to unset bad matches 
+-----------------------
+11-08-2019 11:48:42.60216[4][4] - Elapsed time: 0.034 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.60254[4][4] - Elapsed time: 0.383 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 2 relevant rows 
+-----------------------
+11-08-2019 11:48:42.60259[4][4] - Elapsed time: 0.048 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+11-08-2019 11:48:42.60356[4][4] - Elapsed time: 0.975 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [id] => 878
+            [bot_id] => 1
+            [pattern] => TEST LINK
+            [thatpattern] => 
+            [topic] => 
+            [filename] => husna.aiml
+            [template] => <link>
+        <text>Pandorabots</text>
+        <url>https://www.pandorabots.com/</url>
+    </link>
+            [score] => 262
+            [current_that] => maybe you should read the don t read me too
+            [aiml_id] => 878
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: test (2 points), direct word match: link (2 points)
+        )
+
+    [1] => Array
+        (
+            [id] => 882
+            [bot_id] => 1
+            [pattern] => *
+            [thatpattern] => 
+            [topic] => 
+            [filename] => husna.aiml
+            [template] => Maaf saya tidak tahu
+            [score] => 252
+            [current_that] => maybe you should read the don t read me too
+            [aiml_id] => 882
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), pattern star match (1 points)
+        )
+
+)
+ 
+-----------------------
+11-08-2019 11:48:42.60365[2][4] - Elapsed time: 0.090 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 878
+            [bot_id] => 1
+            [pattern] => TEST LINK
+            [thatpattern] => 
+            [topic] => 
+            [filename] => husna.aiml
+            [template] => <link>
+        <text>Pandorabots</text>
+        <url>https://www.pandorabots.com/</url>
+    </link>
+            [score] => 262
+            [current_that] => maybe you should read the don t read me too
+            [aiml_id] => 878
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: test (2 points), direct word match: link (2 points)
+        )
+
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.60399[4][4] - Elapsed time: 0.332 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => 878
+    [bot_id] => 1
+    [pattern] => TEST LINK
+    [thatpattern] => 
+    [topic] => 
+    [filename] => husna.aiml
+    [template] => <link>
+        <text>Pandorabots</text>
+        <url>https://www.pandorabots.com/</url>
+    </link>
+    [score] => 262
+    [current_that] => maybe you should read the don t read me too
+    [aiml_id] => 878
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: test (2 points), direct word match: link (2 points)
+)
+ 
+-----------------------
+11-08-2019 11:48:42.60403[2][4] - Elapsed time: 0.044 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+11-08-2019 11:48:42.60412[4][4] - Elapsed time: 0.090 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:878 (TEST LINK) 
+-----------------------
+11-08-2019 11:48:42.60416[3][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+11-08-2019 11:48:42.60420[2][4] - Elapsed time: 0.037 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'TEST LINK' 
+-----------------------
+11-08-2019 11:48:42.60422[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+11-08-2019 11:48:42.60425[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+11-08-2019 11:48:42.60430[2][4] - Elapsed time: 0.047 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => 878
+    [category_id] => 878
+    [html_template] => 
+    [lookingfor] => TEST LINK
+    [pattern] => TEST LINK
+    [score] => 262
+    [stars] => Array
+        (
+        )
+
+    [template] => <link>
+        <text>Pandorabots</text>
+        <url>https://www.pandorabots.com/</url>
+    </link>
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => test link
+)
+ 
+-----------------------
+11-08-2019 11:48:42.60434[2][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+11-08-2019 11:48:42.60438[2][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+11-08-2019 11:48:42.60444[4][4] - Elapsed time: 0.062 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><link><text><text>Pandorabots</text></text><url><text>https://www.pandorabots.com/</text></url></link></template> 
+-----------------------
+11-08-2019 11:48:42.60457[2][4] - Elapsed time: 0.129 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+11-08-2019 11:48:42.60466[4][4] - Elapsed time: 0.096 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><link><text><text>Pandorabots</text></text><url><text>https://www.pandorabots.com/</text></url></link></template>
+ 
+-----------------------
+11-08-2019 11:48:42.60470[4][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+11-08-2019 11:48:42.60475[2][4] - Elapsed time: 0.047 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+11-08-2019 11:48:42.60483[4][4] - Elapsed time: 0.076 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element link at level 1. element XML = <link><text><text>Pandorabots</text></text><url><text>https://www.pandorabots.com/</text></url></link> 
+-----------------------
+11-08-2019 11:48:42.60486[4][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_link_tag does not exist. Parsing tag as text. 
+-----------------------
+11-08-2019 11:48:42.60490[2][4] - Elapsed time: 0.037 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+11-08-2019 11:48:42.60494[4][4] - Elapsed time: 0.045 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 2. element XML = <text><text>Pandorabots</text></text> 
+-----------------------
+11-08-2019 11:48:42.60498[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+11-08-2019 11:48:42.60501[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+11-08-2019 11:48:42.60504[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+11-08-2019 11:48:42.60507[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding '' to the response array. tag name is text 
+-----------------------
+11-08-2019 11:48:42.60510[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.60513[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => 
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.60516[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.60519[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning '' 
+-----------------------
+11-08-2019 11:48:42.60522[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding '' to the response array. tag name is link. 
+-----------------------
+11-08-2019 11:48:42.60525[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+11-08-2019 11:48:42.60530[4][4] - Elapsed time: 0.044 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element url at level 2. element XML = <url><text>https://www.pandorabots.com/</text></url> 
+-----------------------
+11-08-2019 11:48:42.60533[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_url_tag does not exist. Parsing tag as text. 
+-----------------------
+11-08-2019 11:48:42.60536[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+11-08-2019 11:48:42.60541[4][4] - Elapsed time: 0.043 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 3. element XML = <text>https://www.pandorabots.com/</text> 
+-----------------------
+11-08-2019 11:48:42.60544[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+11-08-2019 11:48:42.60547[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+11-08-2019 11:48:42.60550[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+11-08-2019 11:48:42.60553[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'https://www.pandorabots.com/' to the response array. tag name is text 
+-----------------------
+11-08-2019 11:48:42.60556[2][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.60558[2][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => https://www.pandorabots.com/
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.60561[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.60564[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'https://www.pandorabots.com/' 
+-----------------------
+11-08-2019 11:48:42.60567[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'https://www.pandorabots.com/' to the response array. tag name is url. 
+-----------------------
+11-08-2019 11:48:42.60570[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.60573[2][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => https://www.pandorabots.com/
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.60580[4][4] - Elapsed time: 0.065 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.60583[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'https://www.pandorabots.com/' 
+-----------------------
+11-08-2019 11:48:42.60586[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'https://www.pandorabots.com/' to the response array. tag name is link. 
+-----------------------
+11-08-2019 11:48:42.60589[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.60592[2][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => 
+    [1] => https://www.pandorabots.com/
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.60594[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.60597[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning ' https://www.pandorabots.com/' 
+-----------------------
+11-08-2019 11:48:42.60600[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'https://www.pandorabots.com/' to the response array. tag name is template. 
+-----------------------
+11-08-2019 11:48:42.60603[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-08-2019 11:48:42.60606[2][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => https://www.pandorabots.com/
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.60609[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-08-2019 11:48:42.60612[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'https://www.pandorabots.com/' 
+-----------------------
+11-08-2019 11:48:42.60615[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: https://www.pandorabots.com/ 
+-----------------------
+11-08-2019 11:48:42.60619[4][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+11-08-2019 11:48:42.60622[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+11-08-2019 11:48:42.60625[2][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'https://www.pandorabots.com/' to the front of the [that_raw] array 
+-----------------------
+11-08-2019 11:48:42.60629[4][4] - Elapsed time: 0.040 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+11-08-2019 11:48:42.60639[2][4] - Elapsed time: 0.098 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'https://www.pandorabots.com/' to the front of the [that] array 
+-----------------------
+11-08-2019 11:48:42.60645[4][4] - Elapsed time: 0.056 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'https://www.' 
+-----------------------
+11-08-2019 11:48:42.60648[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'https://www.' 
+-----------------------
+11-08-2019 11:48:42.60655[4][4] - Elapsed time: 0.073 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HTTPS WWW' 
+-----------------------
+11-08-2019 11:48:42.60658[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'HTTPS WWW' 
+-----------------------
+11-08-2019 11:48:42.60661[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'pandorabots.' 
+-----------------------
+11-08-2019 11:48:42.60664[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'pandorabots.' 
+-----------------------
+11-08-2019 11:48:42.60669[4][4] - Elapsed time: 0.055 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'PANDORABOTS' 
+-----------------------
+11-08-2019 11:48:42.60672[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'PANDORABOTS' 
+-----------------------
+11-08-2019 11:48:42.60675[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'com/' 
+-----------------------
+11-08-2019 11:48:42.60678[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'com/' 
+-----------------------
+11-08-2019 11:48:42.60683[4][4] - Elapsed time: 0.050 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'COM' 
+-----------------------
+11-08-2019 11:48:42.60686[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'COM' 
+-----------------------
+11-08-2019 11:48:42.60691[2][4] - Elapsed time: 0.049 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'https://www.pandorabots.com/' to the front of the [parsed_template] array 
+-----------------------
+11-08-2019 11:48:42.60694[4][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+11-08-2019 11:48:42.60699[2][4] - Elapsed time: 0.046 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '<link>
+        <text>Pandorabots</text>
+        <url>https://www.pandorabots.com/</url>
+    </link>' to the front of the [template] array 
+-----------------------
+11-08-2019 11:48:42.60703[4][4] - Elapsed time: 0.038 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+11-08-2019 11:48:42.60708[2][4] - Elapsed time: 0.050 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+11-08-2019 11:48:42.60713[3][4] - Elapsed time: 0.056 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `dbChatbotApk`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'test link',
+      'https://www.pandorabots.com/',
+      272,
+      'd65dfdaa19f3756393e6745733e7cda8',
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+11-08-2019 11:48:42.61089[4][4] - Elapsed time: 3.760 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+11-08-2019 11:48:42.61140[4][4] - Elapsed time: 0.502 milliseconds
+[PDO_functions.php][db_fetch][132]
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/Program-O-master/chatbot/core/conversation/display_conversation.php
+Function: get_conversation_to_display
+Line #: 36
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.bots' doesn't exist
+SQL: SELECT `bot_name` FROM `bots` WHERE `bot_id` = 1 limit 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.bots' doesn't exist
+)
+
+ 
+-----------------------
+11-08-2019 11:48:42.61174[3][4] - Elapsed time: 0.339 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `dbChatbotApk`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  
+-----------------------
+11-08-2019 11:48:42.61299[2][4] - Elapsed time: 1.256 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '13' lines of conversation 
+-----------------------
+11-08-2019 11:48:42.61306[4][4] - Elapsed time: 0.072 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as json 
+-----------------------
+11-08-2019 11:48:42.61310[2][4] - Elapsed time: 0.037 milliseconds
+[display_conversation.php][get_json][150]
+Outputting response as JSON 
+-----------------------
+11-08-2019 11:48:42.61318[4][4] - Elapsed time: 0.085 milliseconds
+[display_conversation.php][get_json][164]
+Returning JSON string: {"convo_id":"d65dfdaa19f3756393e6745733e7cda8","usersay":"test link","botsay":"https:\/\/www.pandorabots.com\/","botData":{"convo_id":"d65dfdaa19f3756393e6745733e7cda8","format":"json","bot_id":"1","user_name":"Pencari","user_id":"272","totallines":1,"rawSay":"test link","conversation_lines":null,"remember_up_to":null,"debugemail":null,"debug_level":null,"debugmode":1,"save_state":null,"default_aiml_pattern":null,"bot_parent_id":null,"aimlData":{"id":"878","bot_id":"1","pattern":"TEST LINK","thatpattern":"","topic":"","filename":"husna.aiml","template":"<link>\n        <text>Pandorabots<\/text>\n        <url>https:\/\/www.pandorabots.com\/<\/url>\n    <\/link>","score":262,"current_that":"maybe you should read the don t read me too","aiml_id":"878","track_score":"current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: test (2 points), direct word match: link (2 points)"}}} 
+-----------------------
+11-08-2019 11:48:42.61369[2][4] - Elapsed time: 0.504 milliseconds
+[conversation_start.php][Called outside of function][260]
+Closing Database 
+-----------------------
+11-08-2019 11:48:42.61382[0][4] - Elapsed time: 0.134 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 92.156 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => test link
+    [conversation] => Array
+        (
+            [convo_id] => d65dfdaa19f3756393e6745733e7cda8
+            [format] => json
+            [bot_id] => 1
+            [user_name] => Pencari
+            [user_id] => 272
+            [totallines] => 1
+            [rawSay] => test link
+            [conversation_lines] => 
+            [remember_up_to] => 
+            [debugemail] => 
+            [debug_level] => 
+            [debugmode] => 1
+            [save_state] => 
+            [default_aiml_pattern] => 
+            [bot_parent_id] => 
+            [aimlData] => Array
+                (
+                    [id] => 878
+                    [bot_id] => 1
+                    [pattern] => TEST LINK
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => husna.aiml
+                    [template] => <link>
+        <text>Pandorabots</text>
+        <url>https://www.pandorabots.com/</url>
+    </link>
+                    [score] => 262
+                    [current_that] => maybe you should read the don t read me too
+                    [aiml_id] => 878
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: test (2 points), direct word match: link (2 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => test link
+            [lookingfor] => TEST LINK
+            [category_id] => 878
+            [pattern] => TEST LINK
+            [thatpattern] => 
+            [template] => <link>
+        <text>Pandorabots</text>
+        <url>https://www.pandorabots.com/</url>
+    </link>
+            [html_template] => 
+            [topic] => 
+            [score] => 262
+            [aiml_id] => 878
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => https://www.pandorabots.com/
+        )
+
+    [bot_properties] => Array
+        (
+            [age] => 
+            [baseballteam] => 
+            [birthday] => 
+            [birthplace] => 
+            [botmaster] => 
+            [boyfriend] => 
+            [build] => 
+            [celebrities] => 
+            [celebrity] => 
+            [class] => 
+            [email] => 
+            [emotions] => 
+            [ethics] => 
+            [etype] => 
+            [family] => 
+            [favoriteactor] => 
+            [favoriteactress] => 
+            [favoriteartist] => 
+            [favoriteauthor] => 
+            [favoriteband] => 
+            [favoritebook] => 
+            [favoritecolor] => 
+            [favoritefood] => 
+            [favoritemovie] => 
+            [favoritemusician] => 
+            [favoritesong] => 
+            [favoritesport] => 
+            [feelings] => 
+            [footballteam] => 
+            [forfun] => 
+            [friend] => 
+            [friends] => 
+            [gender] => 
+            [genus] => 
+            [girlfriend] => 
+            [hockeyteam] => 
+            [kindmusic] => 
+            [kingdom] => 
+            [language] => 
+            [location] => 
+            [looklike] => 
+            [loves] => 
+            [master] => 
+            [name] => husna
+            [nationality] => 
+            [order] => 
+            [orientation] => 
+            [party] => 
+            [phylum] => 
+            [president] => 
+            [question] => 
+            [religion] => 
+            [sign] => 
+            [size] => 
+            [species] => 
+            [talkabout] => 
+            [version] => 
+            [vocabulary] => 
+            [wear] => 
+            [website] => 
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 127.0.0.1
+            [name] => Pencari
+        )
+
+    [raw_that] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Maybe you should read the <a target="_new" href="http://www
+                    [1] => alicebot
+                    [2] => org/dont
+                    [3] => html">DON\'T READ ME</a> too
+                    [4] => 
+                )
+
+            [2] => Array
+                (
+                    [0] => https://www
+                    [1] => pandorabots
+                    [2] => com/
+                )
+
+            [3] => Array
+                (
+                    [0] => https://www
+                    [1] => w3schools
+                    [2] => com/w3css/img_lights
+                    [3] => jpg
+                )
+
+            [4] => Array
+                (
+                    [0] => https://www
+                    [1] => pandorabots
+                    [2] => com/
+                )
+
+            [5] => Array
+                (
+                    [0] => a b c d
+                )
+
+            [6] => Array
+                (
+                    [0] => Maaf saya tidak tahu, saya akan belajar lagi
+                )
+
+            [7] => Array
+                (
+                    [0] => Maaf saya tidak tahu, saya akan belajar lagi
+                )
+
+            [8] => Array
+                (
+                    [0] => ajajaja
+                )
+
+            [9] => Array
+                (
+                    [0] => haiiii
+                )
+
+            [10] => Array
+                (
+                    [0] => Maaf saya tidak tahu, saya akan belajar lagi
+                )
+
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => COM
+                    [2] => PANDORABOTS
+                    [3] => HTTPS WWW
+                )
+
+            [2] => Array
+                (
+                    [1] => MAYBE YOU SHOULD READ THE DON T READ ME TOO
+                )
+
+            [3] => Array
+                (
+                    [1] => HTTPS WWW PANDORABOTS COM
+                )
+
+            [4] => Array
+                (
+                    [1] => HTTPS WWW W3SCHOOLS COM W3CSS IMG LIGHTS JPG
+                )
+
+            [5] => Array
+                (
+                    [1] => HTTPS WWW PANDORABOTS COM
+                )
+
+            [6] => Array
+                (
+                    [1] => A B C D
+                )
+
+            [7] => Array
+                (
+                    [1] => MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI
+                )
+
+            [8] => Array
+                (
+                    [1] => MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI
+                )
+
+            [9] => Array
+                (
+                    [1] => AJAJAJA
+                )
+
+            [10] => Array
+                (
+                    [1] => HAIIII
+                )
+
+            [12] => 
+        )
+
+    [input] => Array
+        (
+            [1] => test link
+            [2] => I AM DOWNLOADING
+            [3] => TEST LINK
+            [4] => TEST IMAGE
+            [5] => TEST LINK
+            [6] => FIRST A B C D
+            [7] => FIRTS A B S N N
+            [8] => FIRT A BA ABAB
+            [9] => EXPLODE AJAJAJA
+            [10] => EJA HAIIII
+        )
+
+    [time_start] => 1565516922.5216
+    [user_say] => Array
+        (
+            [1] => TEST LINK
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => com/
+                    [3] => pandorabots.
+                    [4] => https://www.
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => https://www.pandorabots.com/
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => <link> <text>Pandorabots</text> <url>https://www.pandorabots.com/</url> </link>
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => {"convo_id":"d65dfdaa19f3756393e6745733e7cda8","usersay":"test link","botsay":"https:\/\/www.pandorabots.com\/","botData":{"convo_id":"d65dfdaa19f3756393e6745733e7cda8","format":"json","bot_id":"1","user_name":"Pencari","user_id":"272","totallines":1,"rawSay":"test link","conversation_lines":null,"remember_up_to":null,"debugemail":null,"debug_level":null,"debugmode":1,"save_state":null,"default_aiml_pattern":null,"bot_parent_id":null,"aimlData":{"id":"878","bot_id":"1","pattern":"TEST LINK","thatpattern":"","topic":"","filename":"husna.aiml","template":"<link>\n        <text>Pandorabots<\/text>\n        <url>https:\/\/www.pandorabots.com\/<\/url>\n    <\/link>","score":262,"current_that":"maybe you should read the don t read me too","aiml_id":"878","track_score":"current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: test (2 points), direct word match: link (2 points)"}}}
+)
+
+-----------------------
+Total execution time: 92.156 Milliseconds. Goodbye.

@@ -1,0 +1,422 @@
+30-07-2019 05:28:38.20945[0][4] - Elapsed time: 22.762 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+30-07-2019 05:28:38.22607[4][4] - Elapsed time: 16.620 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+30-07-2019 05:28:38.23262[4][4] - Elapsed time: 6.546 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+30-07-2019 05:28:38.23423[4][4] - Elapsed time: 1.617 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+30-07-2019 05:28:38.25360[4][4] - Elapsed time: 19.372 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+30-07-2019 05:28:38.25373[4][4] - Elapsed time: 0.128 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+30-07-2019 05:28:38.25431[0][4] - Elapsed time: 0.574 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = 192.168.43.60 
+-----------------------
+30-07-2019 05:28:38.25438[4][4] - Elapsed time: 0.078 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'Cara daftar'. 
+-----------------------
+30-07-2019 05:28:38.25452[4][4] - Elapsed time: 0.139 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+30-07-2019 05:28:38.25460[4][4] - Elapsed time: 0.079 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+30-07-2019 05:28:38.25469[3][4] - Elapsed time: 0.083 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `dbChatbotApk`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+30-07-2019 05:28:38.25615[4][4] - Elapsed time: 1.461 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 192.168.43.60 
+-----------------------
+30-07-2019 05:28:38.25624[2][4] - Elapsed time: 0.098 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+30-07-2019 05:28:38.25633[3][4] - Elapsed time: 0.081 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+30-07-2019 05:28:38.25712[2][4] - Elapsed time: 0.794 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+30-07-2019 05:28:38.25720[2][4] - Elapsed time: 0.080 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+30-07-2019 05:28:38.25800[3][4] - Elapsed time: 0.801 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `dbChatbotApk`.`client_properties` WHERE `user_id` = 270 AND `bot_id` = 1; 
+-----------------------
+30-07-2019 05:28:38.25869[2][4] - Elapsed time: 0.692 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+30-07-2019 05:28:38.25895[2][4] - Elapsed time: 0.257 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Cara. 
+-----------------------
+30-07-2019 05:28:38.25905[2][4] - Elapsed time: 0.097 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+30-07-2019 05:28:38.26136[2][4] - Elapsed time: 2.312 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-07-2019 05:28:38.26149[2][4] - Elapsed time: 0.130 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on daftar. 
+-----------------------
+30-07-2019 05:28:38.26167[4][4] - Elapsed time: 0.183 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Cara daftar' 
+-----------------------
+30-07-2019 05:28:38.26224[4][4] - Elapsed time: 0.569 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'CARA DAFTAR' 
+-----------------------
+30-07-2019 05:28:38.26230[2][4] - Elapsed time: 0.055 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: CARA DAFTAR
+Convo id: 192.168.43.60
+Bot id: 1
+Format:  
+-----------------------
+30-07-2019 05:28:38.26234[4][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+30-07-2019 05:28:38.26237[2][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+30-07-2019 05:28:38.26242[3][4] - Elapsed time: 0.048 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `dbChatbotApk`.`conversation_log` WHERE `user_id` = 270 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+30-07-2019 05:28:38.26327[1][4] - Elapsed time: 0.856 milliseconds
+[intialise_conversation.php][load_that][804]
+Inputs returned:Array
+(
+    [0] => Cara daftar
+)
+ 
+-----------------------
+30-07-2019 05:28:38.26333[4][4] - Elapsed time: 0.059 milliseconds
+[intialise_conversation.php][load_that][805]
+Loading previous responses into the ~THAT~ array. 
+-----------------------
+30-07-2019 05:28:38.26337[1][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][load_that][806]
+Responses returned:Array
+(
+    [0] => masuk ke link berikut https://alhusnakotatangerang.com/pendaftaran/
+)
+ 
+-----------------------
+30-07-2019 05:28:38.26344[2][4] - Elapsed time: 0.070 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+30-07-2019 05:28:38.26347[2][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => masuk ke link berikut https://alhusnakotatangerang
+    [1] => com/pendaftaran/
+)
+
+ 
+-----------------------
+30-07-2019 05:28:38.26352[4][4] - Elapsed time: 0.051 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+30-07-2019 05:28:38.26358[4][4] - Elapsed time: 0.053 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'masuk ke link berikut https://alhusnakotatangerang com/pendaftaran/' 
+-----------------------
+30-07-2019 05:28:38.26362[4][4] - Elapsed time: 0.050 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'masuk ke link berikut https://alhusnakotatangerang com/pendaftaran/' 
+-----------------------
+30-07-2019 05:28:38.26368[4][4] - Elapsed time: 0.057 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'masuk ke link berikut https://alhusnakotatangerang com/pendaftaran/' 
+-----------------------
+30-07-2019 05:28:38.26384[4][4] - Elapsed time: 0.154 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG COM PENDAFTARAN' 
+-----------------------
+30-07-2019 05:28:38.26388[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG COM PENDAFTARAN' 
+-----------------------
+30-07-2019 05:28:38.26392[2][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG COM PENDAFTARAN' to the front of the [that] array 
+-----------------------
+30-07-2019 05:28:38.26403[4][4] - Elapsed time: 0.119 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+30-07-2019 05:28:38.26429[4][4] - Elapsed time: 0.256 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG COM PENDAFTARAN' 
+-----------------------
+30-07-2019 05:28:38.26434[4][4] - Elapsed time: 0.046 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG COM PENDAFTARAN' 
+-----------------------
+30-07-2019 05:28:38.26442[4][4] - Elapsed time: 0.083 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG COM PENDAFTARAN' 
+-----------------------
+30-07-2019 05:28:38.26445[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG COM PENDAFTARAN' 
+-----------------------
+30-07-2019 05:28:38.26450[4][4] - Elapsed time: 0.054 milliseconds
+[intialise_conversation.php][load_that][835]
+Loading previous user inputs into the ~INPUT~ array. 
+-----------------------
+30-07-2019 05:28:38.26454[2][4] - Elapsed time: 0.041 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+30-07-2019 05:28:38.26458[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Cara daftar
+)
+
+ 
+-----------------------
+30-07-2019 05:28:38.26461[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+30-07-2019 05:28:38.26464[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Cara daftar' 
+-----------------------
+30-07-2019 05:28:38.26467[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Cara daftar' 
+-----------------------
+30-07-2019 05:28:38.26470[4][4] - Elapsed time: 0.029 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Cara daftar' 
+-----------------------
+30-07-2019 05:28:38.26476[4][4] - Elapsed time: 0.061 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'CARA DAFTAR' 
+-----------------------
+30-07-2019 05:28:38.26479[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'CARA DAFTAR' 
+-----------------------
+30-07-2019 05:28:38.26482[2][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'CARA DAFTAR' to the front of the [input] array 
+-----------------------
+30-07-2019 05:28:38.26485[4][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+30-07-2019 05:28:38.27400[2][4] - Elapsed time: 9.148 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+30-07-2019 05:28:38.27413[3][4] - Elapsed time: 0.134 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1; 
+-----------------------
+30-07-2019 05:28:38.27488[4][4] - Elapsed time: 0.751 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+30-07-2019 05:28:38.27496[0][1] - Elapsed time: 0.074 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+30-07-2019 05:28:38.27499[0][1] - Elapsed time: 0.033 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 1 
+-----------------------
+30-07-2019 05:28:38.27502[0][1] - Elapsed time: 0.031 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = CARA DAFTAR: raw say = Cara daftar 
+-----------------------
+30-07-2019 05:28:38.27511[0][1] - Elapsed time: 0.090 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = Cara daftar, RAW say = Cara daftar 
+-----------------------
+30-07-2019 05:28:38.27844[1][1] - Elapsed time: 3.331 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][35]
+Current THAT = MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG COM PENDAFTARAN 
+-----------------------
+30-07-2019 05:28:38.28580[0][1] - Elapsed time: 7.353 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 99.035 milliseconds. 
+-----------------------
+Debug Level: 1
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [conversation] => Array
+        (
+            [convo_id] => 192.168.43.60
+            [bot_name] => Husna
+            [bot_id] => 1
+            [format] => json
+            [unknown_user] => Pencari
+            [user_name] => Pencari
+            [user_id] => 270
+            [totallines] => 1
+            [rawSay] => Cara daftar
+            [conversation_lines] => 2
+            [remember_up_to] => 10
+            [debugemail] => vikyyahya.id@gmail.com
+            [debug_level] => 1
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => RANDOM PICKUP LINE
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => 452
+                    [bot_id] => 1
+                    [pattern] => CARA DAFTAR
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => husna.aiml
+                    [template] => masuk ke link berikut  https://alhusnakotatangerang.com/pendaftaran/
+                    [score] => 262
+                    [current_that] => masuk ke link berikut https alhusnakotatangerang com pendaftaran
+                    [aiml_id] => 452
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: cara (2 points), direct word match: daftar (2 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => Cara daftar
+            [lookingfor] => CARA DAFTAR
+            [category_id] => 452
+            [pattern] => CARA DAFTAR
+            [thatpattern] => 
+            [template] => masuk ke link berikut  https://alhusnakotatangerang.com/pendaftaran/
+            [html_template] => 
+            [topic] => 
+            [score] => 262
+            [aiml_id] => 452
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => masuk ke link berikut https://alhusnakotatangerang.com/pendaftaran/
+        )
+
+    [topic] => Array
+        (
+            [1] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => COM PENDAFTARAN
+                    [2] => MASUK KE LINK BERIKUT HTTPS ALHUSNAKOTATANGERANG
+                )
+
+        )
+
+    [input] => Array
+        (
+            [1] => Cara daftar
+        )
+
+    [stack] => Array
+        (
+            [top] => 
+            [last] => 
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 192.168.43.60
+            [name] => Pencari
+        )
+
+    [user_say] => Array
+        (
+            [1] => CARA DAFTAR
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => com/pendaftaran/
+                    [3] => masuk ke link berikut https://alhusnakotatangerang.
+                )
+
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => masuk ke link berikut https://alhusnakotatangerang.com/pendaftaran/
+        )
+
+)
+
+-----------------------
+Total execution time: 99.035 Milliseconds. Goodbye.

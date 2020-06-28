@@ -1,0 +1,103 @@
+04-10-2019 17:26:24.36248[0][4] - Elapsed time: 7.567 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #73-Ubuntu SMP Thu Sep 12 13:16:13 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+04-10-2019 17:26:24.37691[4][4] - Elapsed time: 14.432 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+04-10-2019 17:26:24.38201[4][4] - Elapsed time: 5.094 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+04-10-2019 17:26:24.38288[4][4] - Elapsed time: 0.876 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+04-10-2019 17:26:24.38625[4][4] - Elapsed time: 3.365 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+04-10-2019 17:26:24.38632[4][4] - Elapsed time: 0.070 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+04-10-2019 17:26:24.38667[0][4] - Elapsed time: 0.353 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = db6b0122e0db3f1dc47e2750f29c718d 
+-----------------------
+04-10-2019 17:26:24.38672[4][4] - Elapsed time: 0.045 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said ''. 
+-----------------------
+04-10-2019 17:26:24.38675[4][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][intialise_convoArray][29]
+Intialising conversation 
+-----------------------
+04-10-2019 17:26:24.38678[4][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank topic array 
+-----------------------
+04-10-2019 17:26:24.38683[4][4] - Elapsed time: 0.042 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+04-10-2019 17:26:24.38686[4][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank star array 
+-----------------------
+04-10-2019 17:26:24.38689[4][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+04-10-2019 17:26:24.38693[4][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][load_blank_stack][85]
+Loading blank stack 
+-----------------------
+04-10-2019 17:26:24.38696[4][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+04-10-2019 17:26:24.38699[2][4] - Elapsed time: 0.031 milliseconds
+[handle_user.php][load_new_client_defaults][24]
+Loading client defaults 
+-----------------------
+04-10-2019 17:26:24.38702[2][4] - Elapsed time: 0.029 milliseconds
+[conversation_start.php][Called outside of function][255]
+Conversation initialized, awaiting user 
+-----------------------
+04-10-2019 17:26:24.38705[2][4] - Elapsed time: 0.033 milliseconds
+[conversation_start.php][Called outside of function][261]
+Closing Database 
+-----------------------
+04-10-2019 17:26:24.38709[0][4] - Elapsed time: 0.041 milliseconds
+[conversation_start.php][Called outside of function][267]
+Conversation Ending. Elapsed time: 32.162 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [client_properties] => Array
+        (
+            [name] => Seeker
+            [id] => db6b0122e0db3f1dc47e2750f29c718d
+        )
+
+    [send_to_user] => User input not detected.
+)
+
+-----------------------
+Total execution time: 32.162 Milliseconds. Goodbye.

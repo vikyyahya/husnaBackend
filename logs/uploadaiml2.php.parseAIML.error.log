@@ -1,0 +1,226 @@
+Bad SQL encountered in file /opt/lampp/htdocs/husna/application/views/uploadaiml2.php, line #643. SQL:
+DELETE FROM `tbl_aiml`  WHERE `filename` = 'husna.aiml' AND bot_id = 1
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.tbl_aiml' doesn't exist
+)
+
+Exception Message:
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.tbl_aiml' doesn't exist;
+Parameters:
+Array
+(
+    [:filename] => husna.aiml
+    [:bot_id] => 1
+)
+Bad SQL encountered in file /opt/lampp/htdocs/husna/application/views/uploadaiml2.php, line #789. SQL:
+INSERT INTO `tbl_aiml` (`id`, `bot_id`, `pattern`, `thatpattern`, `template`, `topic`, `filename`) VALUES
+    (NULL, 1 , 'BAGAIMANA PENDAPAT KAMU TENTANG SMK AL HUSNA', '', 'Apakah kamu mau daftar ke smk al husna?', 'smk al husna', 'husna.aiml');
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.tbl_aiml' doesn't exist
+)
+
+Exception Message:
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.tbl_aiml' doesn't exist;
+Parameters:
+Array
+(
+    [:bot_id] => 1
+    [:pattern] => BAGAIMANA PENDAPAT KAMU TENTANG SMK AL HUSNA
+    [:that] => 
+    [:template] => Apakah kamu mau daftar ke smk al husna?
+    [:topic] => SimpleXMLElement Object
+        (
+            [0] => smk al husna
+        )
+
+    [:fileName] => husna.aiml
+)
+Bad SQL encountered in file /opt/lampp/htdocs/husna/application/views/uploadaiml2.php, line #643. SQL:
+DELETE FROM `tbl_aiml`  WHERE `filename` = 'husna.aiml' AND bot_id = 1
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.tbl_aiml' doesn't exist
+)
+
+Exception Message:
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.tbl_aiml' doesn't exist;
+Parameters:
+Array
+(
+    [:filename] => husna.aiml
+    [:bot_id] => 1
+)
+Bad SQL encountered in file /opt/lampp/htdocs/husna/application/views/uploadaiml2.php, line #789. SQL:
+INSERT INTO `tbl_aiml` (`id`, `bot_id`, `pattern`, `thatpattern`, `template`, `topic`, `filename`) VALUES
+    (NULL, 1 , 'BAGAIMANA PENDAPAT KAMU TENTANG SMK AL HUSNA', '', 'Apakah kamu mau daftar ke smk al husna?', 'smk al husna', 'husna.aiml');
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.tbl_aiml' doesn't exist
+)
+
+Exception Message:
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.tbl_aiml' doesn't exist;
+Parameters:
+Array
+(
+    [:bot_id] => 1
+    [:pattern] => BAGAIMANA PENDAPAT KAMU TENTANG SMK AL HUSNA
+    [:that] => 
+    [:template] => Apakah kamu mau daftar ke smk al husna?
+    [:topic] => SimpleXMLElement Object
+        (
+            [0] => smk al husna
+        )
+
+    [:fileName] => husna.aiml
+)
+Bad SQL encountered in file /opt/lampp/htdocs/husna/application/views/uploadaiml2.php, line #643. SQL:
+DELETE FROM `tbl_aiml`  WHERE `filename` = 'husna.aiml' AND bot_id = 1
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.tbl_aiml' doesn't exist
+)
+
+Exception Message:
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.tbl_aiml' doesn't exist;
+Parameters:
+Array
+(
+    [:filename] => husna.aiml
+    [:bot_id] => 1
+)
+Bad SQL encountered in file /opt/lampp/htdocs/husna/application/views/uploadaiml2.php, line #789. SQL:
+INSERT INTO `tbl_aiml` (`id`, `bot_id`, `pattern`, `thatpattern`, `template`, `topic`, `filename`) VALUES
+    (NULL, 1 , 'BAGAIMANA PENDAPAT KAMU TENTANG SMK AL HUSNA', '', 'Apakah kamu mau daftar ke smk al husna?', 'smk al husna', 'husna.aiml');
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.tbl_aiml' doesn't exist
+)
+
+Exception Message:
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.tbl_aiml' doesn't exist;
+Parameters:
+Array
+(
+    [:bot_id] => 1
+    [:pattern] => BAGAIMANA PENDAPAT KAMU TENTANG SMK AL HUSNA
+    [:that] => 
+    [:template] => Apakah kamu mau daftar ke smk al husna?
+    [:topic] => SimpleXMLElement Object
+        (
+            [0] => smk al husna
+        )
+
+    [:fileName] => husna.aiml
+)
+Bad SQL encountered in file /opt/lampp/htdocs/husna/application/views/uploadaiml2.php, line #793. SQL:
+INSERT INTO `aiml` (`id`, `bot_id`, `pattern`, `thatpattern`, `template`, `topic`, `filename`,`id_admin`) VALUES
+    (NULL, 1 , 'NAMA SAYA *', '', 'Hi 
+                <set name="user name">
+                    <star index="1"/>
+                </set>
+                ada yang bisa saya bantu', '', 'husna.aiml', '');
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'id_admin' cannot be null
+)
+
+Exception Message:
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_admin' cannot be null;
+Parameters:
+Array
+(
+    [:bot_id] => 1
+    [:pattern] => NAMA SAYA *
+    [:that] => SimpleXMLElement Object
+        (
+        )
+
+    [:template] => Hi 
+                <set name="user name">
+                    <star index="1"/>
+                </set>
+                ada yang bisa saya bantu
+    [:topic] => 
+    [:fileName] => husna.aiml
+    [:id_admin] => 
+)

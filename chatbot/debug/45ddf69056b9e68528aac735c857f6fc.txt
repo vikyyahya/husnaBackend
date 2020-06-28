@@ -1,0 +1,332 @@
+17-08-2019 03:47:30.40875[0][4] - Elapsed time: 35.235 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+17-08-2019 03:47:30.43148[4][4] - Elapsed time: 22.737 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+17-08-2019 03:47:30.43883[4][4] - Elapsed time: 7.344 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+17-08-2019 03:47:30.43999[4][4] - Elapsed time: 1.167 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+17-08-2019 03:47:30.44514[4][4] - Elapsed time: 5.145 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+17-08-2019 03:47:30.44523[4][4] - Elapsed time: 0.095 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+17-08-2019 03:47:30.44561[0][4] - Elapsed time: 0.374 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = 45ddf69056b9e68528aac735c857f6fc 
+-----------------------
+17-08-2019 03:47:30.44568[4][4] - Elapsed time: 0.069 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'asasdsdsa'. 
+-----------------------
+17-08-2019 03:47:30.44579[4][4] - Elapsed time: 0.112 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+17-08-2019 03:47:30.44586[4][4] - Elapsed time: 0.067 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+17-08-2019 03:47:30.44592[1][4] - Elapsed time: 0.061 milliseconds
+[intialise_conversation.php][check_set_convo_id][653]
+Cannot find CONVO ID. Using default: 45ddf69056b9e68528aac735c857f6fc 
+-----------------------
+17-08-2019 03:47:30.44598[2][4] - Elapsed time: 0.063 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+17-08-2019 03:47:30.44605[3][4] - Elapsed time: 0.072 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+17-08-2019 03:47:30.44704[2][4] - Elapsed time: 0.984 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+17-08-2019 03:47:30.44712[2][4] - Elapsed time: 0.088 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+17-08-2019 03:47:30.44781[2][4] - Elapsed time: 0.687 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+17-08-2019 03:47:30.44850[3][4] - Elapsed time: 0.689 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #304 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Pencari'  , '45ddf69056b9e68528aac735c857f6fc'   , 1 , '0'        , '::1', ''      , 'PostmanRuntime/7.6.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+17-08-2019 03:47:30.44903[3][4] - Elapsed time: 0.532 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `dbChatbotApk`.`client_properties` WHERE `user_id` = 304 AND `bot_id` = 1; 
+-----------------------
+17-08-2019 03:47:30.44978[2][4] - Elapsed time: 0.746 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+17-08-2019 03:47:30.44986[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on asasdsdsa. 
+-----------------------
+17-08-2019 03:47:30.44997[2][4] - Elapsed time: 0.113 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+17-08-2019 03:47:30.45363[4][4] - Elapsed time: 3.657 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'asasdsdsa' 
+-----------------------
+17-08-2019 03:47:30.45377[4][4] - Elapsed time: 0.144 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASASDSDSA' 
+-----------------------
+17-08-2019 03:47:30.45384[2][4] - Elapsed time: 0.069 milliseconds
+[conversation_start.php][Called outside of function][201]
+Details:
+User say: ASASDSDSA
+Convo id: 45ddf69056b9e68528aac735c857f6fc
+Bot id: 1
+Format:  
+-----------------------
+17-08-2019 03:47:30.45391[4][4] - Elapsed time: 0.067 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+17-08-2019 03:47:30.45397[2][4] - Elapsed time: 0.062 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+17-08-2019 03:47:30.45405[3][4] - Elapsed time: 0.080 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `dbChatbotApk`.`conversation_log` WHERE `user_id` = 304 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+17-08-2019 03:47:30.45499[4][4] - Elapsed time: 0.937 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+17-08-2019 03:47:30.45634[2][4] - Elapsed time: 1.347 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+17-08-2019 03:47:30.45643[3][4] - Elapsed time: 0.094 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1; 
+-----------------------
+17-08-2019 03:47:30.45717[4][4] - Elapsed time: 0.741 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+17-08-2019 03:47:30.45727[0][1] - Elapsed time: 0.097 milliseconds
+[conversation_start.php][Called outside of function][221]
+Default debug level = 4 
+-----------------------
+17-08-2019 03:47:30.45733[0][1] - Elapsed time: 0.058 milliseconds
+[conversation_start.php][Called outside of function][223]
+Current debug level = 1 
+-----------------------
+17-08-2019 03:47:30.45739[0][1] - Elapsed time: 0.058 milliseconds
+[conversation_start.php][Called outside of function][236]
+Say = ASASDSDSA: raw say = asasdsdsa 
+-----------------------
+17-08-2019 03:47:30.45752[0][1] - Elapsed time: 0.139 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = asasdsdsa, RAW say = asasdsdsa 
+-----------------------
+17-08-2019 03:47:30.45916[0][1] - Elapsed time: 1.633 milliseconds
+[PDO_functions.php][db_fetchAll][210]
+An error was generated while extracting multiple rows of data from the database in file /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php at line 872, in the function find_userdefined_aiml.
+SQL: SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `dbChatbotApk`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = '45ddf69056b9e68528aac735c857f6fc'
+    AND (
+        'ASASDSDSA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC;
+Params: Array
+(
+    [:user_id] => 45ddf69056b9e68528aac735c857f6fc
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDO_statement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.aiml_userdefined' doesn't exist
+)
+
+ 
+-----------------------
+17-08-2019 03:47:30.45926[1][1] - Elapsed time: 0.108 milliseconds
+[find_aiml.php][Called outside of function][873]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873 
+-----------------------
+17-08-2019 03:47:30.46418[1][1] - Elapsed time: 4.918 milliseconds
+[find_aiml.php][get_aiml_to_parse][944]
+Added input 'ASASDSDSA' to the unknown_inputs table. 
+-----------------------
+17-08-2019 03:47:30.47507[0][1] - Elapsed time: 10.887 milliseconds
+[conversation_start.php][Called outside of function][267]
+Conversation Ending. Elapsed time: 101.456 milliseconds. 
+-----------------------
+Debug Level: 1
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [conversation] => Array
+        (
+            [convo_id] => 45ddf69056b9e68528aac735c857f6fc
+            [bot_name] => Husna
+            [bot_id] => 1
+            [format] => json
+            [unknown_user] => Pencari
+            [user_id] => 304
+            [totallines] => 1
+            [user_name] => Pencari
+            [rawSay] => asasdsdsa
+            [conversation_lines] => 2
+            [remember_up_to] => 10
+            [debugemail] => vikyyahya.id@gmail.com
+            [debug_level] => 1
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => RANDOM PICKUP LINE
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => 1332
+                    [bot_id] => 1
+                    [pattern] => *
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => husna.aiml
+                    [template] => Maaf saya tidak tahu
+                    [score] => 252
+                    [current_that] => 
+                    [aiml_id] => 1332
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), pattern star match (1 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => asasdsdsa
+            [lookingfor] => ASASDSDSA
+            [category_id] => 1332
+            [pattern] => *
+            [thatpattern] => 
+            [template] => Maaf saya tidak tahu
+            [html_template] => 
+            [topic] => 
+            [score] => 252
+            [aiml_id] => 1332
+            [stars] => Array
+                (
+                    [1] => asasdsdsa
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Maaf saya tidak tahu
+        )
+
+    [topic] => Array
+        (
+            [1] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => MAAF SAYA TIDAK TAHU
+                )
+
+        )
+
+    [star] => Array
+        (
+            [1] => asasdsdsa
+        )
+
+    [input] => Array
+        (
+            [1] => asasdsdsa
+        )
+
+    [stack] => Array
+        (
+            [top] => 
+            [last] => 
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => ::1
+            [name] => Pencari
+        )
+
+    [user_say] => Array
+        (
+            [1] => ASASDSDSA
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Maaf saya tidak tahu
+                )
+
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Maaf saya tidak tahu
+        )
+
+)
+
+-----------------------
+Total execution time: 101.456 Milliseconds. Goodbye.

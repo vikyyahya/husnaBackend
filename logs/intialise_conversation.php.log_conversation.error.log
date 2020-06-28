@@ -1,0 +1,60 @@
+Bad SQL encountered in file /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php, line #477. SQL:
+insert into `client_properties`
+    (`id`, `user_id`, `bot_id`, `name`, `value`)
+    values(null, 0, 1, 'name', '');
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+Exception Message:
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null;
+Parameters:
+Array
+(
+    [:bot_id] => 1
+    [:user_id] => 0
+    [:name] => name
+    [:value] => 
+)
+Bad SQL encountered in file /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php, line #477. SQL:
+insert into `client_properties`
+    (`id`, `user_id`, `bot_id`, `name`, `value`)
+    values(null, 0, 1, 'name', '');
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+Exception Message:
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null;
+Parameters:
+Array
+(
+    [:bot_id] => 1
+    [:user_id] => 0
+    [:name] => name
+    [:value] => 
+)

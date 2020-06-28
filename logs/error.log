@@ -1,0 +1,137 @@
+08/17/2019 02:29:03 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:30:56 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:31:28 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:40:29 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:40:54 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:41:30 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:41:53 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:42:00 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:42:30 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:44:20 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:48:53 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 02:49:28 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:15:12 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:15:48 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:18:21 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:19:25 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:20:13 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:20:13 - PHP ERROR [Notice] -Undefined index: aimldata in /opt/lampp/htdocs/husna/chatbot/core/conversation/display_conversation.php on Line 161
+08/17/2019 03:20:31 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:21:03 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:23:36 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:23:53 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:24:26 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:24:39 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:26:36 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:27:11 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:27:27 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:47:30 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 03:47:42 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 04:22:27 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 04:22:27 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 1055
+08/17/2019 04:23:52 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 04:23:52 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 1055
+08/17/2019 04:26:18 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 04:28:17 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 04:37:25 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 04:37:25 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 1055
+08/17/2019 04:38:38 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 05:41:05 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 05:42:48 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 355
+08/17/2019 05:42:48 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 05:49:02 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 355
+08/17/2019 05:49:02 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 05:57:18 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 355
+08/17/2019 05:57:18 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 05:58:18 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 355
+08/17/2019 05:58:18 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 05:58:30 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 355
+08/17/2019 05:58:30 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 06:37:31 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122
+08/17/2019 06:37:31 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126
+08/17/2019 06:37:31 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 06:37:31 - PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+08/17/2019 06:37:31 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+08/17/2019 16:05:50 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122
+08/17/2019 16:05:50 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126
+08/17/2019 16:05:50 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+08/17/2019 16:05:50 - PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+08/17/2019 16:05:50 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:28:01 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122
+10/04/2019 17:28:01 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: conversation_lines in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 358
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: remember_up_to in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 359
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: debugemail in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 360
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: debugshow in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 361
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: debugmode in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 362
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: save_state in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 363
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: default_aiml_pattern in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 364
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: bot_parent_id in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 365
+10/04/2019 17:28:01 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+10/04/2019 17:28:01 - PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:28:01 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:40:40 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122
+10/04/2019 17:40:40 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: conversation_lines in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 358
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: remember_up_to in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 359
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: debugemail in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 360
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: debugshow in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 361
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: debugmode in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 362
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: save_state in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 363
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: default_aiml_pattern in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 364
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: bot_parent_id in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 365
+10/04/2019 17:40:40 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+10/04/2019 17:40:40 - PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:40:40 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:56:11 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122
+10/04/2019 17:56:11 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126
+10/04/2019 17:56:11 - PHP ERROR [Notice] -Undefined index: conversation_lines in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 358
+10/04/2019 17:56:11 - PHP ERROR [Notice] -Undefined index: remember_up_to in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 359
+10/04/2019 17:56:11 - PHP ERROR [Notice] -Undefined index: debugemail in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 360
+10/04/2019 17:56:11 - PHP ERROR [Notice] -Undefined index: debugshow in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 361
+10/04/2019 17:56:11 - PHP ERROR [Notice] -Undefined index: debugmode in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 362
+10/04/2019 17:56:11 - PHP ERROR [Notice] -Undefined index: save_state in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 363
+10/04/2019 17:56:11 - PHP ERROR [Notice] -Undefined index: default_aiml_pattern in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 364
+10/04/2019 17:56:11 - PHP ERROR [Notice] -Undefined index: bot_parent_id in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 365
+10/04/2019 17:56:11 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+10/04/2019 17:56:12 - PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:56:12 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:57:19 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122
+10/04/2019 17:57:19 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: conversation_lines in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 358
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: remember_up_to in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 359
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: debugemail in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 360
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: debugshow in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 361
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: debugmode in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 362
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: save_state in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 363
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: default_aiml_pattern in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 364
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: bot_parent_id in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 365
+10/04/2019 17:57:19 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+10/04/2019 17:57:19 - PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:57:19 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:57:49 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122
+10/04/2019 17:57:49 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: conversation_lines in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 358
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: remember_up_to in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 359
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: debugemail in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 360
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: debugshow in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 361
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: debugmode in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 362
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: save_state in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 363
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: default_aiml_pattern in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 364
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: bot_parent_id in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 365
+10/04/2019 17:57:49 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+10/04/2019 17:57:49 - PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:57:49 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:58:14 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122
+10/04/2019 17:58:14 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126
+10/04/2019 17:58:14 - PHP ERROR [Notice] -Undefined index: conversation_lines in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 358
+10/04/2019 17:58:14 - PHP ERROR [Notice] -Undefined index: remember_up_to in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 359
+10/04/2019 17:58:14 - PHP ERROR [Notice] -Undefined index: debugemail in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 360
+10/04/2019 17:58:14 - PHP ERROR [Notice] -Undefined index: debugshow in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 361
+10/04/2019 17:58:14 - PHP ERROR [Notice] -Undefined index: debugmode in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 362
+10/04/2019 17:58:14 - PHP ERROR [Notice] -Undefined index: save_state in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 363
+10/04/2019 17:58:14 - PHP ERROR [Notice] -Undefined index: default_aiml_pattern in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 364
+10/04/2019 17:58:14 - PHP ERROR [Notice] -Undefined index: bot_parent_id in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 365
+10/04/2019 17:58:14 - PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873
+10/04/2019 17:58:15 - PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65
+10/04/2019 17:58:15 - PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65

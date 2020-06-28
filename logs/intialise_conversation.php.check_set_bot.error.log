@@ -1,0 +1,275 @@
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.bots' doesn't exist
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.bots' doesn't exist
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.bots' doesn't exist
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.bots' doesn't exist
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.bots' doesn't exist
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.bots' doesn't exist
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.bots' doesn't exist
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.bots' doesn't exist
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbChatbotApk.bots' doesn't exist
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.bots' doesn't exist
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bot_active' in 'where clause'
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'bot_active' in 'where clause'
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bot_active' in 'where clause'
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'bot_active' in 'where clause'
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bot_active' in 'where clause'
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'bot_active' in 'where clause'
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bot_active' in 'where clause'
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'bot_active' in 'where clause'
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bot_active' in 'where clause'
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'bot_active' in 'where clause'
+)
+
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bot_active' in 'where clause'
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'bot_active' in 'where clause'
+)
+

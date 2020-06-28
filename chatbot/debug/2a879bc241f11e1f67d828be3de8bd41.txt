@@ -1,0 +1,333 @@
+12-08-2019 18:17:45.95013[0][4] - Elapsed time: 6.978 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #60-Ubuntu SMP Tue Jul 2 18:22:20 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+12-08-2019 18:17:45.96539[4][4] - Elapsed time: 15.255 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+12-08-2019 18:17:45.97074[4][4] - Elapsed time: 5.352 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+12-08-2019 18:17:45.97153[4][4] - Elapsed time: 0.786 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+12-08-2019 18:17:45.97488[4][4] - Elapsed time: 3.355 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+12-08-2019 18:17:45.97494[4][4] - Elapsed time: 0.059 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+12-08-2019 18:17:45.97522[0][4] - Elapsed time: 0.282 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = 2a879bc241f11e1f67d828be3de8bd41 
+-----------------------
+12-08-2019 18:17:45.97527[4][4] - Elapsed time: 0.043 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'hayyyya'. 
+-----------------------
+12-08-2019 18:17:45.97534[4][4] - Elapsed time: 0.074 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+12-08-2019 18:17:45.97538[4][4] - Elapsed time: 0.038 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+12-08-2019 18:17:45.97542[3][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `dbchatbot2`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+12-08-2019 18:17:45.97692[1][4] - Elapsed time: 1.504 milliseconds
+[intialise_conversation.php][check_set_convo_id][653]
+Cannot find CONVO ID. Using default: 2a879bc241f11e1f67d828be3de8bd41 
+-----------------------
+12-08-2019 18:17:45.97698[2][4] - Elapsed time: 0.060 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+12-08-2019 18:17:45.97702[3][4] - Elapsed time: 0.040 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `dbchatbot2`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+12-08-2019 18:17:45.97772[2][4] - Elapsed time: 0.698 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+12-08-2019 18:17:45.97778[2][4] - Elapsed time: 0.055 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+12-08-2019 18:17:45.97828[2][4] - Elapsed time: 0.505 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+12-08-2019 18:17:45.97882[3][4] - Elapsed time: 0.538 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #275 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Pencari'  , '2a879bc241f11e1f67d828be3de8bd41'   , 1 , '0'        , '127.0.0.1', ''      , 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+12-08-2019 18:17:45.97921[3][4] - Elapsed time: 0.386 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `dbchatbot2`.`client_properties` WHERE `user_id` = 275 AND `bot_id` = 1; 
+-----------------------
+12-08-2019 18:17:45.97975[2][4] - Elapsed time: 0.547 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+12-08-2019 18:17:45.97996[2][4] - Elapsed time: 0.211 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on hayyyya. 
+-----------------------
+12-08-2019 18:17:45.98005[2][4] - Elapsed time: 0.082 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+12-08-2019 18:17:45.98210[4][4] - Elapsed time: 2.049 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'hayyyya' 
+-----------------------
+12-08-2019 18:17:45.98262[4][4] - Elapsed time: 0.523 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'HAYYYYA' 
+-----------------------
+12-08-2019 18:17:45.98267[2][4] - Elapsed time: 0.051 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: HAYYYYA
+Convo id: 2a879bc241f11e1f67d828be3de8bd41
+Bot id: 1
+Format:  
+-----------------------
+12-08-2019 18:17:45.98271[4][4] - Elapsed time: 0.038 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+12-08-2019 18:17:45.98274[2][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+12-08-2019 18:17:45.98278[3][4] - Elapsed time: 0.044 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `dbchatbot2`.`conversation_log` WHERE `user_id` = 275 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+12-08-2019 18:17:45.98350[4][4] - Elapsed time: 0.714 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+12-08-2019 18:17:45.98439[2][4] - Elapsed time: 0.893 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+12-08-2019 18:17:45.98445[3][4] - Elapsed time: 0.059 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `dbchatbot2`.`bots` WHERE bot_id = 1; 
+-----------------------
+12-08-2019 18:17:45.98503[4][4] - Elapsed time: 0.582 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+12-08-2019 18:17:45.98510[0][1] - Elapsed time: 0.066 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+12-08-2019 18:17:45.98513[0][1] - Elapsed time: 0.033 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 1 
+-----------------------
+12-08-2019 18:17:45.98516[0][1] - Elapsed time: 0.028 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = HAYYYYA: raw say = hayyyya 
+-----------------------
+12-08-2019 18:17:45.98538[0][1] - Elapsed time: 0.222 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = hayyyya, RAW say = hayyyya 
+-----------------------
+12-08-2019 18:17:45.98843[0][1] - Elapsed time: 3.047 milliseconds
+[PDO_functions.php][db_fetchAll][202]
+An error was generated while extracting multiple rows of data from the database in file /opt/lampp/htdocs/clone/chatbot/core/aiml/find_aiml.php at line 1053, in the function find_aiml_matches.
+SQL: SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `dbchatbot2`.`aiml` WHERE
+    bot_id = 1 AND (
+        'HAYYYYA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'RANDOM PICKUP LINE'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC;
+Params: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDO_statement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'filename' in 'field list'
+)
+
+ 
+-----------------------
+12-08-2019 18:17:45.98853[1][1] - Elapsed time: 0.106 milliseconds
+[find_aiml.php][Called outside of function][1055]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/clone/chatbot/core/aiml/find_aiml.php on Line 1055 
+-----------------------
+12-08-2019 18:17:45.98876[1][1] - Elapsed time: 0.226 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+12-08-2019 18:17:45.98944[1][1] - Elapsed time: 0.679 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input 'HAYYYYA' to the unknown_inputs table. 
+-----------------------
+12-08-2019 18:17:45.99021[1][1] - Elapsed time: 0.768 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+12-08-2019 18:17:45.00031[0][1] - Elapsed time: 10.106 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 57.074 milliseconds. 
+-----------------------
+Debug Level: 1
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [conversation] => Array
+        (
+            [convo_id] => 2a879bc241f11e1f67d828be3de8bd41
+            [bot_name] => Husna
+            [bot_id] => 1
+            [format] => json
+            [unknown_user] => Pencari
+            [user_id] => 275
+            [totallines] => 1
+            [user_name] => Pencari
+            [rawSay] => hayyyya
+            [conversation_lines] => 2
+            [remember_up_to] => 10
+            [debugemail] => vikyyahya.id@gmail.com
+            [debug_level] => 1
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => RANDOM PICKUP LINE
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => Maaf saya tidak tahu, saya akan belajar lagi
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => hayyyya
+            [lookingfor] => HAYYYYA
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => Maaf saya tidak tahu, saya akan belajar lagi
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Maaf saya tidak tahu, saya akan belajar lagi
+        )
+
+    [topic] => Array
+        (
+            [1] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI
+                )
+
+        )
+
+    [input] => Array
+        (
+            [1] => hayyyya
+        )
+
+    [stack] => Array
+        (
+            [top] => 
+            [last] => 
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 127.0.0.1
+            [name] => Pencari
+        )
+
+    [user_say] => Array
+        (
+            [1] => HAYYYYA
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Maaf saya tidak tahu, saya akan belajar lagi
+                )
+
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Maaf saya tidak tahu, saya akan belajar lagi
+        )
+
+)
+
+-----------------------
+Total execution time: 57.074 Milliseconds. Goodbye.

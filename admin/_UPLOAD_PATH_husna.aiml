@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0" encoding="UTF-8" ?>
+
+  
+   <category>
+       <pattern> nama saya * </pattern>
+        <template>
+                Hi 
+                <set name="username">
+                    <star index="1"/>
+                </set>
+                ada yang bisa saya bantu
+            </template>
+        </category>
+
+   <category>
+      <pattern>SAYA *</pattern>
+      <template>
+         Hai <set  name="username"> <star/>! </set>
+      </template>  
+   </category>  
+
+     <category>
+      <pattern>terimakasih</pattern>
+      <template>
+         Senang bisa membantu <get name="username"/>
+      </template>  
+   </category>  
+
+        <category>
+            <pattern>siapa nama saya</pattern>
+            <template>
+                nama kamu
+                <get name="username"/>
+                , aku masih ingat
+            </template>
+    </category>
+
+  <category>
+      <pattern> ASSALAMU'ALAIKUM</pattern>
+      <template>
+         Wa'alaikumsalam 
+      </template>
+   </category>
+
+<!-- srai -->
+  <category>
+   <pattern> ASSALAMU'ALAIKUM * </pattern>
+      <template>
+       <srai>  ASSALAMU'ALAIKUM </srai>
+      </template>
+   </category>
+    <category>
+   <pattern> apa * </pattern>
+      <template>
+       <srai>  <star index="1"/> </srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>HI</pattern>
+      <template>
+         <random>
+            <li> Hello! </li>
+            <li> Hi !</li>
+            <li> hello !</li>
+            <li> Hai !</li>
+
+         </random>
+      </template>
+   </category>   
+
+   <category>
+      <pattern>I am *</pattern>
+      <template>
+         Hello <set name="username"> <star/>! </set>
+      </template>  
+   </category>  
+   
+   <category>
+      <pattern>Good Night</pattern>
+      <template>
+         Hi <get name="username"/> Thanks for the conversation!
+      </template>  
+   </category>
+
+   <!-- that -->
+   <topic name="smk al husna">
+     <category>
+      <pattern>bagaimana pendapat kamu tentang smk al husna</pattern>
+      <template>Apakah kamu mau daftar ke smk al husna?
+      </template>  
+   </category>  
+   <category>
+      <pattern>Ya</pattern>
+      <that>Apakah kamu mau daftar ke smk al husna?</that>
+      <template>menurut saya itu pilihan bagus, karena sekolahan ini bagus
+                </template>
+   </category>
+   <category>
+      <pattern>tidak</pattern>
+      <that>Apakah kamu mau daftar ke smk al husna?</that>
+      <template>seharusnya kamu pertimbangkan pilihan itu, karena sekolahan ini bagus</template>
+   </category> 
+
+ </topic>
+
+
+
+ <!-- Fasilitas -->
+     <category>
+      <pattern>Fasilitas</pattern>
+      <template>
+         Fasilitas sekolah antara lain : gedung, laboratorium, perpustakaan, sarana olah raga
+      </template>  
+   </category>  
+
+   <category>
+   <pattern> Apa * *</pattern>
+      <template>
+       <srai>  <star index="1"/> </srai>
+      </template>
+   </category>
+
+
+
+     <category>
+      <pattern>Alamat </pattern>
+      <template>
+         Jl. Siswa Dalam No.9-11, Sukaasih, Kec. Tangerang, Kota Tangerang, Banten 15111
+      </template>  
+   </category>  
+
+  <category>
+      <pattern>Cara daftar</pattern>
+      <template>
+       masuk ke link berikut  https://alhusnakotatangerang.com/pendaftaran/
+      </template>  
+   </category>   
+
+   <category>
+      <pattern>Visi Misi</pattern>
+      <template>
+        visinya Mencetak tenaga kerja siap pakai yang berkepribadian islami.
+        Misi Mempersiapkan tenaga ahli di bidang keahliannya yang berlandaskan nilai-nilai iman dan taqwa serta 
+        Menghasilkan sumber daya manusia yang menguasai teknologi yang dilandasi akhlakul karimah.
+      </template>  
+   </category>   
+
+   <category>
+      <pattern>Sejarah</pattern>
+      <template>
+      SMK Otomotif Al Husna berdiri sejak tahun 1997, dengan kepala sekolah pertama Bapak Dr. H. Amal Herawan Budhi MM., pada saat itu jurusannya baru ada satu jurusan yaitu Teknik Kendaraan Ringan (TKR) atau disebut Otomotif pada saat itu. Seiring berjalannya waktu pada tahun 2005 tambah satu lagi jurusan yaitu Teknik Sepeda Motor dengan jumlah murid pada waktu itu 500 siswa/siswi.
+      </template>  
+   </category> 
+
+   <category><pattern>I AM DOWNLOADING</pattern>
+<template>Maybe you should read the <a target="_new" href="http://www.alicebot.org/dont.html">DON'T READ ME</a> too.</template>
+</category>
+
+<category>
+<pattern>TEST LINK</pattern>
+<template> 
+    <link>
+        <text>Pandorabots</text>
+        <url>https://www.pandorabots.com/</url>
+    </link>
+</template>
+</category>  
+
+<category>
+<pattern>EXPLODE *</pattern>
+<template><explode><star /></explode></template>
+</category>
+
+<category>
+<pattern>FIRST *</pattern>
+<template><first><star /></first></template>
+</category>
+
+<category>
+<pattern>test image</pattern>
+<template> 
+<image> https://www.w3schools.com/w3css/img_lights.jpg  </image> </template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<template>Maaf saya tidak tahu  </template>
+</category>
+
+ 
+
+</aiml>

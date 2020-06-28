@@ -1,0 +1,1104 @@
+04-10-2019 17:57:49.35306[0][4] - Elapsed time: 7.244 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #73-Ubuntu SMP Thu Sep 12 13:16:13 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+04-10-2019 17:57:49.36696[4][4] - Elapsed time: 13.900 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+04-10-2019 17:57:49.37163[4][4] - Elapsed time: 4.663 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+04-10-2019 17:57:49.37240[4][4] - Elapsed time: 0.774 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+04-10-2019 17:57:49.37575[4][4] - Elapsed time: 3.344 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+04-10-2019 17:57:49.37581[4][4] - Elapsed time: 0.063 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+04-10-2019 17:57:49.37610[0][4] - Elapsed time: 0.296 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = 8b899019233161243fcfd66113369965 
+-----------------------
+04-10-2019 17:57:49.37616[4][4] - Elapsed time: 0.055 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'sadasasa'. 
+-----------------------
+04-10-2019 17:57:49.37628[4][4] - Elapsed time: 0.122 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+04-10-2019 17:57:49.37635[4][4] - Elapsed time: 0.066 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+04-10-2019 17:57:49.37641[1][4] - Elapsed time: 0.067 milliseconds
+[intialise_conversation.php][check_set_convo_id][653]
+Cannot find CONVO ID. Using default: 8b899019233161243fcfd66113369965 
+-----------------------
+04-10-2019 17:57:49.37647[2][4] - Elapsed time: 0.059 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+04-10-2019 17:57:49.37652[3][4] - Elapsed time: 0.045 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+04-10-2019 17:57:49.37705[4][4] - Elapsed time: 0.537 milliseconds
+[PDO_functions.php][db_fetch][139]
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bot_active' in 'where clause'
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'bot_active' in 'where clause'
+)
+
+ 
+-----------------------
+04-10-2019 17:57:49.37726[1][4] - Elapsed time: 0.207 milliseconds
+[intialise_conversation.php][check_set_bot][622]
+ERROR - Cannot find bot id: 1 
+-----------------------
+04-10-2019 17:57:49.37731[2][4] - Elapsed time: 0.044 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+04-10-2019 17:57:49.37788[2][4] - Elapsed time: 0.575 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+04-10-2019 17:57:49.37853[0][4] - Elapsed time: 0.650 milliseconds
+[PDO_functions.php][db_write][290]
+An error was generated while writing to the database in file unknown at line unknown, in the function unknown.
+SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, ''  , '8b899019233161243fcfd66113369965'   , 1 , '0'        , '::1', ''      , 'PostmanRuntime/7.6.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     );
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'user_name' cannot be null
+)
+ 
+-----------------------
+04-10-2019 17:57:49.37860[3][4] - Elapsed time: 0.065 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #0 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, ''  , '8b899019233161243fcfd66113369965'   , 1 , '0'        , '::1', ''      , 'PostmanRuntime/7.6.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+04-10-2019 17:57:49.37921[0][4] - Elapsed time: 0.613 milliseconds
+[PDO_functions.php][db_write][290]
+An error was generated while writing to the database in file unknown at line unknown, in the function unknown.
+SQL: INSERT INTO `client_properties` (`id`,`user_id`,`bot_id`,`name`,`value`)
+  VALUES (NULL, 0, 1, 'name', '');
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+ 
+-----------------------
+04-10-2019 17:57:49.37928[3][4] - Elapsed time: 0.071 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `dbChatbotApk`.`client_properties` WHERE `user_id` = 0 AND `bot_id` = 1; 
+-----------------------
+04-10-2019 17:57:49.38009[2][4] - Elapsed time: 0.808 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+04-10-2019 17:57:49.38020[2][4] - Elapsed time: 0.111 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on sadasasa. 
+-----------------------
+04-10-2019 17:57:49.38035[2][4] - Elapsed time: 0.156 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+04-10-2019 17:57:49.38094[0][4] - Elapsed time: 0.589 milliseconds
+[PDO_functions.php][db_fetchAll][210]
+An error was generated while extracting multiple rows of data from the database in file /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php at line 121, in the function load_spelling_list.
+SQL: SELECT `missspelling`, `correction` FROM `spellcheck`;
+Params: null
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDO_statement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.spellcheck' doesn't exist
+)
+
+ 
+-----------------------
+04-10-2019 17:57:49.38106[1][4] - Elapsed time: 0.113 milliseconds
+[spell_checker.php][Called outside of function][122]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122 
+-----------------------
+04-10-2019 17:57:49.38132[1][4] - Elapsed time: 0.267 milliseconds
+[spell_checker.php][Called outside of function][126]
+PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126 
+-----------------------
+04-10-2019 17:57:49.38164[4][4] - Elapsed time: 0.314 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'sadasasa' 
+-----------------------
+04-10-2019 17:57:49.38178[4][4] - Elapsed time: 0.139 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SADASASA' 
+-----------------------
+04-10-2019 17:57:49.38185[2][4] - Elapsed time: 0.071 milliseconds
+[conversation_start.php][Called outside of function][201]
+Details:
+User say: SADASASA
+Convo id: 8b899019233161243fcfd66113369965
+Bot id: 1
+Format:  
+-----------------------
+04-10-2019 17:57:49.38192[4][4] - Elapsed time: 0.068 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+04-10-2019 17:57:49.38198[2][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+04-10-2019 17:57:49.38206[3][4] - Elapsed time: 0.084 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `dbChatbotApk`.`conversation_log` WHERE `user_id` = 0 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+04-10-2019 17:57:49.38326[1][4] - Elapsed time: 1.193 milliseconds
+[intialise_conversation.php][load_that][804]
+Inputs returned:Array
+(
+    [0] => sada
+)
+ 
+-----------------------
+04-10-2019 17:57:49.38335[4][4] - Elapsed time: 0.092 milliseconds
+[intialise_conversation.php][load_that][805]
+Loading previous responses into the ~THAT~ array. 
+-----------------------
+04-10-2019 17:57:49.38341[1][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][load_that][806]
+Responses returned:Array
+(
+    [0] => Maaf saya tidak tahu, saya akan belajar lagi
+)
+ 
+-----------------------
+04-10-2019 17:57:49.38350[2][4] - Elapsed time: 0.091 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+04-10-2019 17:57:49.38356[2][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Maaf saya tidak tahu
+    [1] =>  saya akan belajar lagi
+)
+
+ 
+-----------------------
+04-10-2019 17:57:49.38363[4][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+04-10-2019 17:57:49.38369[4][4] - Elapsed time: 0.068 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+04-10-2019 17:57:49.38375[4][4] - Elapsed time: 0.058 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+04-10-2019 17:57:49.38381[4][4] - Elapsed time: 0.061 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Maaf saya tidak tahu saya akan belajar lagi' 
+-----------------------
+04-10-2019 17:57:49.38398[4][4] - Elapsed time: 0.168 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+04-10-2019 17:57:49.38404[4][4] - Elapsed time: 0.062 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+04-10-2019 17:57:49.38410[2][4] - Elapsed time: 0.056 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' to the front of the [that] array 
+-----------------------
+04-10-2019 17:57:49.38418[4][4] - Elapsed time: 0.076 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+04-10-2019 17:57:49.38432[4][4] - Elapsed time: 0.141 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+04-10-2019 17:57:49.38438[4][4] - Elapsed time: 0.064 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+04-10-2019 17:57:49.38450[4][4] - Elapsed time: 0.123 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+04-10-2019 17:57:49.38456[4][4] - Elapsed time: 0.057 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+04-10-2019 17:57:49.38465[4][4] - Elapsed time: 0.087 milliseconds
+[intialise_conversation.php][load_that][835]
+Loading previous user inputs into the ~INPUT~ array. 
+-----------------------
+04-10-2019 17:57:49.38472[2][4] - Elapsed time: 0.073 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+04-10-2019 17:57:49.38478[2][4] - Elapsed time: 0.059 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => sada
+)
+
+ 
+-----------------------
+04-10-2019 17:57:49.38484[4][4] - Elapsed time: 0.056 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+04-10-2019 17:57:49.38490[4][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'sada' 
+-----------------------
+04-10-2019 17:57:49.38495[4][4] - Elapsed time: 0.058 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'sada' 
+-----------------------
+04-10-2019 17:57:49.38501[4][4] - Elapsed time: 0.056 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'sada' 
+-----------------------
+04-10-2019 17:57:49.38511[4][4] - Elapsed time: 0.102 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SADA' 
+-----------------------
+04-10-2019 17:57:49.38517[4][4] - Elapsed time: 0.056 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SADA' 
+-----------------------
+04-10-2019 17:57:49.38522[2][4] - Elapsed time: 0.053 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SADA' to the front of the [input] array 
+-----------------------
+04-10-2019 17:57:49.38528[4][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+04-10-2019 17:57:49.38670[2][4] - Elapsed time: 1.418 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+04-10-2019 17:57:49.38681[3][4] - Elapsed time: 0.111 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1; 
+-----------------------
+04-10-2019 17:57:49.38768[4][4] - Elapsed time: 0.861 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+04-10-2019 17:57:49.38779[1][4] - Elapsed time: 0.116 milliseconds
+[intialise_conversation.php][Called outside of function][358]
+PHP ERROR [Notice] -Undefined index: conversation_lines in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 358 
+-----------------------
+04-10-2019 17:57:49.38809[1][4] - Elapsed time: 0.301 milliseconds
+[intialise_conversation.php][Called outside of function][359]
+PHP ERROR [Notice] -Undefined index: remember_up_to in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 359 
+-----------------------
+04-10-2019 17:57:49.38829[1][4] - Elapsed time: 0.196 milliseconds
+[intialise_conversation.php][Called outside of function][360]
+PHP ERROR [Notice] -Undefined index: debugemail in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 360 
+-----------------------
+04-10-2019 17:57:49.38847[1][4] - Elapsed time: 0.183 milliseconds
+[intialise_conversation.php][Called outside of function][361]
+PHP ERROR [Notice] -Undefined index: debugshow in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 361 
+-----------------------
+04-10-2019 17:57:49.38865[1][4] - Elapsed time: 0.175 milliseconds
+[intialise_conversation.php][Called outside of function][362]
+PHP ERROR [Notice] -Undefined index: debugmode in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 362 
+-----------------------
+04-10-2019 17:57:49.38884[1][4] - Elapsed time: 0.191 milliseconds
+[intialise_conversation.php][Called outside of function][363]
+PHP ERROR [Notice] -Undefined index: save_state in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 363 
+-----------------------
+04-10-2019 17:57:49.38902[1][4] - Elapsed time: 0.182 milliseconds
+[intialise_conversation.php][Called outside of function][364]
+PHP ERROR [Notice] -Undefined index: default_aiml_pattern in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 364 
+-----------------------
+04-10-2019 17:57:49.38923[1][4] - Elapsed time: 0.206 milliseconds
+[intialise_conversation.php][Called outside of function][365]
+PHP ERROR [Notice] -Undefined index: bot_parent_id in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 365 
+-----------------------
+04-10-2019 17:57:49.38940[0][4] - Elapsed time: 0.175 milliseconds
+[conversation_start.php][Called outside of function][221]
+Default debug level = 4 
+-----------------------
+04-10-2019 17:57:49.38946[0][4] - Elapsed time: 0.064 milliseconds
+[conversation_start.php][Called outside of function][223]
+Current debug level = 4 
+-----------------------
+04-10-2019 17:57:49.38952[0][4] - Elapsed time: 0.055 milliseconds
+[conversation_start.php][Called outside of function][236]
+Say = SADASASA: raw say = sadasasa 
+-----------------------
+04-10-2019 17:57:49.38958[4][4] - Elapsed time: 0.058 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+04-10-2019 17:57:49.38963[2][4] - Elapsed time: 0.052 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SADASASA' to the front of the [user_say] array 
+-----------------------
+04-10-2019 17:57:49.38970[4][4] - Elapsed time: 0.073 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+04-10-2019 17:57:49.38980[0][4] - Elapsed time: 0.101 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = sadasasa, RAW say = sadasasa 
+-----------------------
+04-10-2019 17:57:49.38987[2][4] - Elapsed time: 0.066 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'sadasasa' to the front of the [input] array 
+-----------------------
+04-10-2019 17:57:49.38995[4][4] - Elapsed time: 0.084 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+04-10-2019 17:57:49.39001[4][4] - Elapsed time: 0.058 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SADASASA' 
+-----------------------
+04-10-2019 17:57:49.39015[4][4] - Elapsed time: 0.136 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SADASASA' 
+-----------------------
+04-10-2019 17:57:49.39021[4][4] - Elapsed time: 0.063 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+04-10-2019 17:57:49.39144[4][4] - Elapsed time: 1.231 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+04-10-2019 17:57:49.39165[3][4] - Elapsed time: 0.207 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `dbChatbotApk`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = '8b899019233161243fcfd66113369965'
+    AND (
+        'SADASASA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+04-10-2019 17:57:49.39233[0][4] - Elapsed time: 0.684 milliseconds
+[PDO_functions.php][db_fetchAll][210]
+An error was generated while extracting multiple rows of data from the database in file /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php at line 872, in the function find_userdefined_aiml.
+SQL: SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `dbChatbotApk`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = '8b899019233161243fcfd66113369965'
+    AND (
+        'SADASASA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC;
+Params: Array
+(
+    [:user_id] => 8b899019233161243fcfd66113369965
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDO_statement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.aiml_userdefined' doesn't exist
+)
+
+ 
+-----------------------
+04-10-2019 17:57:49.39244[1][4] - Elapsed time: 0.111 milliseconds
+[find_aiml.php][Called outside of function][873]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873 
+-----------------------
+04-10-2019 17:57:49.39266[2][4] - Elapsed time: 0.216 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+04-10-2019 17:57:49.39274[4][4] - Elapsed time: 0.077 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+04-10-2019 17:57:49.39280[4][4] - Elapsed time: 0.061 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = . 
+-----------------------
+04-10-2019 17:57:49.39377[4][4] - Elapsed time: 0.969 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+04-10-2019 17:57:49.39394[3][4] - Elapsed time: 0.179 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `dbChatbotApk`.`aiml` WHERE
+    bot_id = 1 AND (
+        'SADASASA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE ''
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+04-10-2019 17:57:49.39529[3][4] - Elapsed time: 1.349 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+04-10-2019 17:57:49.39538[1][4] - Elapsed time: 0.088 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+04-10-2019 17:57:49.39544[4][4] - Elapsed time: 0.059 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+04-10-2019 17:57:49.39550[4][4] - Elapsed time: 0.063 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = '' 
+-----------------------
+04-10-2019 17:57:49.49819[2][4] - Elapsed time: 102.686 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+04-10-2019 17:57:49.49831[1][4] - Elapsed time: 0.119 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input 'SADASASA' to the unknown_inputs table. 
+-----------------------
+04-10-2019 17:57:49.49947[1][4] - Elapsed time: 1.164 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][35]
+Current THAT = MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI 
+-----------------------
+04-10-2019 17:57:49.49956[4][4] - Elapsed time: 0.091 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+04-10-2019 17:57:49.49960[1][4] - Elapsed time: 0.037 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+04-10-2019 17:57:49.49964[4][4] - Elapsed time: 0.035 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+04-10-2019 17:57:49.50058[4][4] - Elapsed time: 0.945 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => Maaf saya tidak tahu, saya akan belajar lagi
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+04-10-2019 17:57:49.50067[2][4] - Elapsed time: 0.090 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => Maaf saya tidak tahu, saya akan belajar lagi
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+04-10-2019 17:57:49.50101[4][4] - Elapsed time: 0.339 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => Maaf saya tidak tahu, saya akan belajar lagi
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+04-10-2019 17:57:49.50105[2][4] - Elapsed time: 0.040 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+04-10-2019 17:57:49.50114[4][4] - Elapsed time: 0.086 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+04-10-2019 17:57:49.50117[3][4] - Elapsed time: 0.037 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+04-10-2019 17:57:49.50121[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+04-10-2019 17:57:49.50124[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+04-10-2019 17:57:49.50126[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+04-10-2019 17:57:49.50131[2][4] - Elapsed time: 0.044 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => SADASASA
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => Maaf saya tidak tahu, saya akan belajar lagi
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => sadasasa
+)
+ 
+-----------------------
+04-10-2019 17:57:49.50135[2][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+04-10-2019 17:57:49.50138[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+04-10-2019 17:57:49.50143[4][4] - Elapsed time: 0.051 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>Maaf saya tidak tahu, saya akan belajar lagi</text></template> 
+-----------------------
+04-10-2019 17:57:49.50161[2][4] - Elapsed time: 0.177 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+04-10-2019 17:57:49.50170[4][4] - Elapsed time: 0.091 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>Maaf saya tidak tahu, saya akan belajar lagi</text></template>
+ 
+-----------------------
+04-10-2019 17:57:49.50174[4][4] - Elapsed time: 0.043 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+04-10-2019 17:57:49.50183[2][4] - Elapsed time: 0.090 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+04-10-2019 17:57:49.50189[4][4] - Elapsed time: 0.062 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>Maaf saya tidak tahu, saya akan belajar lagi</text> 
+-----------------------
+04-10-2019 17:57:49.50193[4][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+04-10-2019 17:57:49.50196[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+04-10-2019 17:57:49.50199[2][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+04-10-2019 17:57:49.50202[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Maaf saya tidak tahu, saya akan belajar lagi' to the response array. tag name is text 
+-----------------------
+04-10-2019 17:57:49.50205[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+04-10-2019 17:57:49.50208[2][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Maaf saya tidak tahu, saya akan belajar lagi
+)
+
+ 
+-----------------------
+04-10-2019 17:57:49.50210[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+04-10-2019 17:57:49.50214[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Maaf saya tidak tahu, saya akan belajar lagi' 
+-----------------------
+04-10-2019 17:57:49.50217[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Maaf saya tidak tahu, saya akan belajar lagi' to the response array. tag name is template. 
+-----------------------
+04-10-2019 17:57:49.50221[2][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+04-10-2019 17:57:49.50223[2][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Maaf saya tidak tahu, saya akan belajar lagi
+)
+
+ 
+-----------------------
+04-10-2019 17:57:49.50226[4][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+04-10-2019 17:57:49.50229[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Maaf saya tidak tahu, saya akan belajar lagi' 
+-----------------------
+04-10-2019 17:57:49.50232[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Maaf saya tidak tahu, saya akan belajar lagi 
+-----------------------
+04-10-2019 17:57:49.50236[4][4] - Elapsed time: 0.038 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+04-10-2019 17:57:49.50239[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+04-10-2019 17:57:49.50241[2][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Maaf saya tidak tahu, saya akan belajar lagi' to the front of the [that_raw] array 
+-----------------------
+04-10-2019 17:57:49.50245[4][4] - Elapsed time: 0.040 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+04-10-2019 17:57:49.50255[2][4] - Elapsed time: 0.096 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Maaf saya tidak tahu, saya akan belajar lagi' to the front of the [that] array 
+-----------------------
+04-10-2019 17:57:49.50268[4][4] - Elapsed time: 0.125 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Maaf saya tidak tahu, saya akan belajar lagi' 
+-----------------------
+04-10-2019 17:57:49.50274[4][4] - Elapsed time: 0.067 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Maaf saya tidak tahu, saya akan belajar lagi' 
+-----------------------
+04-10-2019 17:57:49.50285[4][4] - Elapsed time: 0.110 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+04-10-2019 17:57:49.50288[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI' 
+-----------------------
+04-10-2019 17:57:49.50294[2][4] - Elapsed time: 0.053 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Maaf saya tidak tahu, saya akan belajar lagi' to the front of the [parsed_template] array 
+-----------------------
+04-10-2019 17:57:49.50297[4][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+04-10-2019 17:57:49.50302[2][4] - Elapsed time: 0.045 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Maaf saya tidak tahu, saya akan belajar lagi' to the front of the [template] array 
+-----------------------
+04-10-2019 17:57:49.50305[4][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+04-10-2019 17:57:49.50310[2][4] - Elapsed time: 0.047 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+04-10-2019 17:57:49.50315[3][4] - Elapsed time: 0.056 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `dbChatbotApk`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'sadasasa',
+      'Maaf saya tidak tahu, saya akan belajar lagi',
+      0,
+      '8b899019233161243fcfd66113369965',
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+04-10-2019 17:57:49.58862[0][4] - Elapsed time: 85.467 milliseconds
+[PDO_functions.php][db_write][290]
+An error was generated while writing to the database in file /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php at line 477, in the function log_conversation.
+SQL: insert into `client_properties`
+    (`id`, `user_id`, `bot_id`, `name`, `value`)
+    values(null, 0, 1, 'name', '');
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+ 
+-----------------------
+04-10-2019 17:57:49.65300[4][4] - Elapsed time: 64.379 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+04-10-2019 17:57:49.65383[3][4] - Elapsed time: 0.833 milliseconds
+[display_conversation.php][get_conversation_to_display][61]
+get_conversation SQL: SELECT * FROM `dbChatbotApk`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  
+-----------------------
+04-10-2019 17:57:49.65483[2][4] - Elapsed time: 0.996 milliseconds
+[display_conversation.php][get_conversation_to_display][79]
+Found '1' lines of conversation 
+-----------------------
+04-10-2019 17:57:49.65489[4][4] - Elapsed time: 0.055 milliseconds
+[display_conversation.php][get_conversation][94]
+Processing conversation as json 
+-----------------------
+04-10-2019 17:57:49.65492[2][4] - Elapsed time: 0.034 milliseconds
+[display_conversation.php][get_json][152]
+Outputting response as JSON 
+-----------------------
+04-10-2019 17:57:49.65497[4][4] - Elapsed time: 0.055 milliseconds
+[display_conversation.php][get_json][166]
+Returning JSON string: {"convo_id":"8b899019233161243fcfd66113369965","usersay":"sadasasa","botsay":"Maaf saya tidak tahu, saya akan belajar lagi","botData":{"aiml_id":"-1","bot_id":1,"pattern":"no results","thatpattern":"","template":"Maaf saya tidak tahu, saya akan belajar lagi","topic":"","score":261,"track_score":"current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)"}} 
+-----------------------
+04-10-2019 17:57:49.65510[1][4] - Elapsed time: 0.125 milliseconds
+[word_censor.php][Called outside of function][65]
+PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65 
+-----------------------
+04-10-2019 17:57:49.65534[1][4] - Elapsed time: 0.245 milliseconds
+[word_censor.php][Called outside of function][65]
+PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65 
+-----------------------
+04-10-2019 17:57:49.65553[2][4] - Elapsed time: 0.183 milliseconds
+[conversation_start.php][Called outside of function][261]
+Closing Database 
+-----------------------
+04-10-2019 17:57:49.65567[0][4] - Elapsed time: 0.144 milliseconds
+[conversation_start.php][Called outside of function][267]
+Conversation Ending. Elapsed time: 309.763 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [conversation] => Array
+        (
+            [convo_id] => 8b899019233161243fcfd66113369965
+            [format] => json
+            [bot_id] => 1
+            [user_id] => 0
+            [totallines] => 1
+            [user_name] => 
+            [rawSay] => sadasasa
+            [conversation_lines] => 
+            [remember_up_to] => 
+            [debugemail] => 
+            [debug_level] => 
+            [debugmode] => 1
+            [save_state] => 
+            [default_aiml_pattern] => 
+            [bot_parent_id] => 
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => Maaf saya tidak tahu, saya akan belajar lagi
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => ::1
+            [name] => 
+        )
+
+    [say] => sadasasa
+    [raw_that] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Maaf saya tidak tahu, saya akan belajar lagi
+                )
+
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI
+                )
+
+            [2] => Array
+                (
+                    [1] => MAAF SAYA TIDAK TAHU SAYA AKAN BELAJAR LAGI
+                )
+
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [input] => Array
+        (
+            [1] => sadasasa
+            [2] => SADA
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [time_start] => 1570204669.3458
+    [aiml] => Array
+        (
+            [user_raw] => sadasasa
+            [lookingfor] => SADASASA
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => Maaf saya tidak tahu, saya akan belajar lagi
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Maaf saya tidak tahu, saya akan belajar lagi
+        )
+
+    [user_say] => Array
+        (
+            [1] => SADASASA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Maaf saya tidak tahu, saya akan belajar lagi
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Maaf saya tidak tahu, saya akan belajar lagi
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => Maaf saya tidak tahu, saya akan belajar lagi
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => {"convo_id":"8b899019233161243fcfd66113369965","usersay":"sadasasa","botsay":"Maaf saya tidak tahu, saya akan belajar lagi","botData":{"aiml_id":"-1","bot_id":1,"pattern":"no results","thatpattern":"","template":"Maaf saya tidak tahu, saya akan belajar lagi","topic":"","score":261,"track_score":"current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)"}}
+)
+
+-----------------------
+Total execution time: 309.763 Milliseconds. Goodbye.

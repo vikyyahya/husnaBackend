@@ -1,0 +1,190 @@
+[14-Aug-2019 10:05:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(905): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 10:08:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(905): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 10:08:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(905): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 11:24:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 11:24:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 11:24:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 11:25:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 11:44:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 11:51:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:03:44 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:16) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 54
+[14-Aug-2019 12:04:53 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:16) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 54
+[14-Aug-2019 12:04:55 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:16) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 54
+[14-Aug-2019 12:05:36 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:15) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 53
+[14-Aug-2019 12:06:01 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:15) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 53
+[14-Aug-2019 12:06:21 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:17) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 53
+[14-Aug-2019 12:06:39 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:18) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 53
+[14-Aug-2019 12:07:10 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:18) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 53
+[14-Aug-2019 12:09:40 Europe/Berlin] PHP Fatal error:  Cannot redeclare db_open() (previously declared in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php:16) in /opt/lampp/htdocs/husna/library/PDO_functions.php on line 53
+[14-Aug-2019 12:20:56 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 16
+[14-Aug-2019 12:22:18 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:23:01 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:23:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:24:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:25:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:25:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(906): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:30:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(906): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:30:22 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:31:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(906): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:32:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(906): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:32:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(906): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:33:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(906): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[14-Aug-2019 12:33:55 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:34:41 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:34:43 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:35:11 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:35:58 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:36:35 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:36:38 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:36:41 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:36:50 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:37:07 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 12
+[14-Aug-2019 12:38:21 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 14
+[14-Aug-2019 12:38:27 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:40:23 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:40:25 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:40:44 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 13
+[14-Aug-2019 12:41:13 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 15
+[14-Aug-2019 12:49:32 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'config/global_config.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/husna/application/views/uploadaiml2.php on line 15
+[15-Aug-2019 03:35:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(906): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 03:37:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(906): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 03:48:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(907): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 04:05:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(802): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 04:05:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(802): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 05:12:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(802): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 05:12:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(802): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 10:00:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(811): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 10:02:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(811): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 10:17:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(776): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 11:51:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(778): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 11:52:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(778): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 11:56:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(778): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4
+[15-Aug-2019 12:45:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/husna/admin/uploadaiml.php(769): require_once()
+#1 {main}
+  thrown in /opt/lampp/htdocs/husna/application/views/admin/_partials/js.php on line 4

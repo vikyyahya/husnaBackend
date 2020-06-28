@@ -1,0 +1,120 @@
+Bad SQL encountered in file unknown, line #unknown. SQL:
+INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, ''  , '6b74e9cccc12a614372efb7cb3de4842'   , 1 , '0'        , '::1', ''      , 'PostmanRuntime/7.6.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     );
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'user_name' cannot be null
+)
+
+Exception Message:
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_name' cannot be null;
+Parameters:
+Array
+(
+    [:username] => 
+    [:convo_id] => 6b74e9cccc12a614372efb7cb3de4842
+    [:bot_id] => 1
+    [:sa] => ::1
+    [:sr] => 
+    [:sb] => PostmanRuntime/7.6.0
+)
+Bad SQL encountered in file unknown, line #unknown. SQL:
+INSERT INTO `client_properties` (`id`,`user_id`,`bot_id`,`name`,`value`)
+  VALUES (NULL, 0, 1, 'name', '');
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+Exception Message:
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null;
+Parameters:
+Array
+(
+    [:user_id] => 0
+    [:bot_id] => 1
+    [:username] => 
+)
+Bad SQL encountered in file unknown, line #unknown. SQL:
+INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, ''  , '8b899019233161243fcfd66113369965'   , 1 , '0'        , '::1', ''      , 'PostmanRuntime/7.6.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     );
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'user_name' cannot be null
+)
+
+Exception Message:
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_name' cannot be null;
+Parameters:
+Array
+(
+    [:username] => 
+    [:convo_id] => 8b899019233161243fcfd66113369965
+    [:bot_id] => 1
+    [:sa] => ::1
+    [:sr] => 
+    [:sb] => PostmanRuntime/7.6.0
+)
+Bad SQL encountered in file unknown, line #unknown. SQL:
+INSERT INTO `client_properties` (`id`,`user_id`,`bot_id`,`name`,`value`)
+  VALUES (NULL, 0, 1, 'name', '');
+PDO Error:
+Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement Error:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+Exception Message:
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null;
+Parameters:
+Array
+(
+    [:user_id] => 0
+    [:bot_id] => 1
+    [:username] => 
+)

@@ -1,0 +1,905 @@
+04-10-2019 17:28:00.87586[0][4] - Elapsed time: 11.141 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  Program O version:            2.6.11
+  Server Software:              Apache/2.4.35 (Unix) OpenSSL/1.0.2p PHP/7.2.11 mod_perl/2.0.8-dev Perl/v5.16.3
+  PHP Version:                  7.2.11
+  OS:                           Linux
+  OS Version:                   #73-Ubuntu SMP Thu Sep 12 13:16:13 UTC 2019
+  MySQL Version:                10.1.36-MariaDB
+  Multi-byte functions enabled: true 
+-----------------------
+04-10-2019 17:28:00.89953[4][4] - Elapsed time: 23.670 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+04-10-2019 17:28:00.90699[4][4] - Elapsed time: 7.458 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+04-10-2019 17:28:00.90817[4][4] - Elapsed time: 1.183 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+04-10-2019 17:28:00.91349[4][4] - Elapsed time: 5.321 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+04-10-2019 17:28:00.91359[4][4] - Elapsed time: 0.102 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+04-10-2019 17:28:00.93221[0][4] - Elapsed time: 18.615 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = bee99bda4bf3d6a3d15187017e28112b 
+-----------------------
+04-10-2019 17:28:00.93232[4][4] - Elapsed time: 0.106 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'assalamu'alaikum'. 
+-----------------------
+04-10-2019 17:28:00.93245[4][4] - Elapsed time: 0.130 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+04-10-2019 17:28:00.93252[4][4] - Elapsed time: 0.071 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+04-10-2019 17:28:00.93258[1][4] - Elapsed time: 0.068 milliseconds
+[intialise_conversation.php][check_set_convo_id][653]
+Cannot find CONVO ID. Using default: bee99bda4bf3d6a3d15187017e28112b 
+-----------------------
+04-10-2019 17:28:00.93265[2][4] - Elapsed time: 0.068 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+04-10-2019 17:28:00.93273[3][4] - Elapsed time: 0.078 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+04-10-2019 17:28:00.93345[4][4] - Elapsed time: 0.716 milliseconds
+[PDO_functions.php][db_fetch][139]
+An error was generated while extracting a row of data from the database. Relevant info:
+File: /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php
+Function: check_set_bot
+Line #: 600
+Error Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bot_active' in 'where clause'
+SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1 AND `bot_active` = 1;
+Parameters: Array
+(
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDOStatement error: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'bot_active' in 'where clause'
+)
+
+ 
+-----------------------
+04-10-2019 17:28:00.95137[1][4] - Elapsed time: 17.924 milliseconds
+[intialise_conversation.php][check_set_bot][622]
+ERROR - Cannot find bot id: 1 
+-----------------------
+04-10-2019 17:28:00.95150[2][4] - Elapsed time: 0.127 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+04-10-2019 17:28:00.95239[2][4] - Elapsed time: 0.897 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+04-10-2019 17:28:01.01796[3][4] - Elapsed time: 65.562 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #2 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Seeker'  , 'bee99bda4bf3d6a3d15187017e28112b'   , 1 , '0'        , '::1', ''      , 'PostmanRuntime/7.6.0'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+04-10-2019 17:28:01.11733[3][4] - Elapsed time: 99.376 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `dbChatbotApk`.`client_properties` WHERE `user_id` = 2 AND `bot_id` = 1; 
+-----------------------
+04-10-2019 17:28:01.11829[2][4] - Elapsed time: 0.961 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+04-10-2019 17:28:01.11841[2][4] - Elapsed time: 0.113 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on assalamu'alaikum. 
+-----------------------
+04-10-2019 17:28:01.11854[2][4] - Elapsed time: 0.135 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+04-10-2019 17:28:01.11939[0][4] - Elapsed time: 0.846 milliseconds
+[PDO_functions.php][db_fetchAll][210]
+An error was generated while extracting multiple rows of data from the database in file /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php at line 121, in the function load_spelling_list.
+SQL: SELECT `missspelling`, `correction` FROM `spellcheck`;
+Params: null
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDO_statement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.spellcheck' doesn't exist
+)
+
+ 
+-----------------------
+04-10-2019 17:28:01.11951[1][4] - Elapsed time: 0.119 milliseconds
+[spell_checker.php][Called outside of function][122]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 122 
+-----------------------
+04-10-2019 17:28:01.14679[1][4] - Elapsed time: 27.286 milliseconds
+[spell_checker.php][Called outside of function][126]
+PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/spell_checker/spell_checker.php on Line 126 
+-----------------------
+04-10-2019 17:28:01.14721[4][4] - Elapsed time: 0.415 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'assalamu alaikum' 
+-----------------------
+04-10-2019 17:28:01.14736[4][4] - Elapsed time: 0.152 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSALAMU ALAIKUM' 
+-----------------------
+04-10-2019 17:28:01.14743[2][4] - Elapsed time: 0.073 milliseconds
+[conversation_start.php][Called outside of function][201]
+Details:
+User say: ASSALAMU ALAIKUM
+Convo id: bee99bda4bf3d6a3d15187017e28112b
+Bot id: 1
+Format:  
+-----------------------
+04-10-2019 17:28:01.14750[4][4] - Elapsed time: 0.069 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+04-10-2019 17:28:01.14756[2][4] - Elapsed time: 0.060 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+04-10-2019 17:28:01.14764[3][4] - Elapsed time: 0.084 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `dbChatbotApk`.`conversation_log` WHERE `user_id` = 2 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+04-10-2019 17:28:01.14859[4][4] - Elapsed time: 0.943 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+04-10-2019 17:28:01.17586[2][4] - Elapsed time: 27.276 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+04-10-2019 17:28:01.17599[3][4] - Elapsed time: 0.121 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `dbChatbotApk`.`bots` WHERE bot_id = 1; 
+-----------------------
+04-10-2019 17:28:01.17680[4][4] - Elapsed time: 0.818 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+04-10-2019 17:28:01.17690[1][4] - Elapsed time: 0.093 milliseconds
+[intialise_conversation.php][Called outside of function][358]
+PHP ERROR [Notice] -Undefined index: conversation_lines in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 358 
+-----------------------
+04-10-2019 17:28:01.17713[1][4] - Elapsed time: 0.237 milliseconds
+[intialise_conversation.php][Called outside of function][359]
+PHP ERROR [Notice] -Undefined index: remember_up_to in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 359 
+-----------------------
+04-10-2019 17:28:01.17735[1][4] - Elapsed time: 0.218 milliseconds
+[intialise_conversation.php][Called outside of function][360]
+PHP ERROR [Notice] -Undefined index: debugemail in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 360 
+-----------------------
+04-10-2019 17:28:01.17752[1][4] - Elapsed time: 0.173 milliseconds
+[intialise_conversation.php][Called outside of function][361]
+PHP ERROR [Notice] -Undefined index: debugshow in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 361 
+-----------------------
+04-10-2019 17:28:01.17770[1][4] - Elapsed time: 0.173 milliseconds
+[intialise_conversation.php][Called outside of function][362]
+PHP ERROR [Notice] -Undefined index: debugmode in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 362 
+-----------------------
+04-10-2019 17:28:01.17792[1][4] - Elapsed time: 0.222 milliseconds
+[intialise_conversation.php][Called outside of function][363]
+PHP ERROR [Notice] -Undefined index: save_state in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 363 
+-----------------------
+04-10-2019 17:28:01.17811[1][4] - Elapsed time: 0.193 milliseconds
+[intialise_conversation.php][Called outside of function][364]
+PHP ERROR [Notice] -Undefined index: default_aiml_pattern in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 364 
+-----------------------
+04-10-2019 17:28:01.17832[1][4] - Elapsed time: 0.205 milliseconds
+[intialise_conversation.php][Called outside of function][365]
+PHP ERROR [Notice] -Undefined index: bot_parent_id in /opt/lampp/htdocs/husna/chatbot/core/conversation/intialise_conversation.php on Line 365 
+-----------------------
+04-10-2019 17:28:01.17851[0][4] - Elapsed time: 0.190 milliseconds
+[conversation_start.php][Called outside of function][221]
+Default debug level = 4 
+-----------------------
+04-10-2019 17:28:01.17857[0][4] - Elapsed time: 0.064 milliseconds
+[conversation_start.php][Called outside of function][223]
+Current debug level = 4 
+-----------------------
+04-10-2019 17:28:01.17870[0][4] - Elapsed time: 0.130 milliseconds
+[conversation_start.php][Called outside of function][236]
+Say = ASSALAMU ALAIKUM: raw say = assalamu alaikum 
+-----------------------
+04-10-2019 17:28:01.17877[4][4] - Elapsed time: 0.068 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+04-10-2019 17:28:01.17883[2][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSALAMU ALAIKUM' to the front of the [user_say] array 
+-----------------------
+04-10-2019 17:28:01.17891[4][4] - Elapsed time: 0.081 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+04-10-2019 17:28:01.17902[0][4] - Elapsed time: 0.107 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = assalamu alaikum, RAW say = assalamu alaikum 
+-----------------------
+04-10-2019 17:28:01.17908[2][4] - Elapsed time: 0.063 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'assalamu alaikum' to the front of the [input] array 
+-----------------------
+04-10-2019 17:28:01.17915[4][4] - Elapsed time: 0.068 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+04-10-2019 17:28:01.17926[4][4] - Elapsed time: 0.111 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+04-10-2019 17:28:01.17933[4][4] - Elapsed time: 0.063 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSALAMU ALAIKUM' 
+-----------------------
+04-10-2019 17:28:01.17947[4][4] - Elapsed time: 0.144 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSALAMU ALAIKUM' 
+-----------------------
+04-10-2019 17:28:01.17953[4][4] - Elapsed time: 0.064 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+04-10-2019 17:28:01.18053[4][4] - Elapsed time: 0.998 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+04-10-2019 17:28:01.18074[3][4] - Elapsed time: 0.213 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `dbChatbotApk`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 'bee99bda4bf3d6a3d15187017e28112b'
+    AND (
+        'ASSALAMU ALAIKUM' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+04-10-2019 17:28:01.18158[0][4] - Elapsed time: 0.834 milliseconds
+[PDO_functions.php][db_fetchAll][210]
+An error was generated while extracting multiple rows of data from the database in file /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php at line 872, in the function find_userdefined_aiml.
+SQL: SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `dbChatbotApk`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 'bee99bda4bf3d6a3d15187017e28112b'
+    AND (
+        'ASSALAMU ALAIKUM' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC;
+Params: Array
+(
+    [:user_id] => bee99bda4bf3d6a3d15187017e28112b
+    [:bot_id] => 1
+)
+
+PDO error: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+PDO_statement error: Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'dbChatbotApk.aiml_userdefined' doesn't exist
+)
+
+ 
+-----------------------
+04-10-2019 17:28:01.18169[1][4] - Elapsed time: 0.115 milliseconds
+[find_aiml.php][Called outside of function][873]
+PHP ERROR [Warning] -count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/husna/chatbot/core/aiml/find_aiml.php on Line 873 
+-----------------------
+04-10-2019 17:28:01.18191[2][4] - Elapsed time: 0.212 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+04-10-2019 17:28:01.18198[4][4] - Elapsed time: 0.072 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+04-10-2019 17:28:01.18203[4][4] - Elapsed time: 0.053 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = . 
+-----------------------
+04-10-2019 17:28:01.18331[4][4] - Elapsed time: 1.274 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+04-10-2019 17:28:01.18346[3][4] - Elapsed time: 0.154 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `dbChatbotApk`.`aiml` WHERE
+    bot_id = 1 AND (
+        'ASSALAMU ALAIKUM' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE ''
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+04-10-2019 17:28:01.18556[3][4] - Elapsed time: 2.103 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+04-10-2019 17:28:01.18568[2][4] - Elapsed time: 0.120 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (1) potential AIML matches 
+-----------------------
+04-10-2019 17:28:01.18676[4][4] - Elapsed time: 1.080 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+04-10-2019 17:28:01.18684[4][4] - Elapsed time: 0.076 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for 'ASSALAMU ALAIKUM' 
+-----------------------
+04-10-2019 17:28:01.18729[4][4] - Elapsed time: 0.450 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 1 relevant rows 
+-----------------------
+04-10-2019 17:28:01.18737[4][4] - Elapsed time: 0.085 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+04-10-2019 17:28:01.18859[4][4] - Elapsed time: 1.217 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [id] => 245
+            [bot_id] => 1
+            [pattern] => ASSALAMU ALAIKUM
+            [thatpattern] => 
+            [topic] => 
+            [filename] => husna.aiml
+            [template] => Wa'alaikumsalam
+            [score] => 262
+            [current_that] => 
+            [aiml_id] => 245
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: assalamu (2 points), direct word match: alaikum (2 points)
+        )
+
+)
+ 
+-----------------------
+04-10-2019 17:28:01.18872[2][4] - Elapsed time: 0.133 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 245
+            [bot_id] => 1
+            [pattern] => ASSALAMU ALAIKUM
+            [thatpattern] => 
+            [topic] => 
+            [filename] => husna.aiml
+            [template] => Wa'alaikumsalam
+            [score] => 262
+            [current_that] => 
+            [aiml_id] => 245
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: assalamu (2 points), direct word match: alaikum (2 points)
+        )
+
+)
+
+ 
+-----------------------
+04-10-2019 17:28:01.18922[4][4] - Elapsed time: 0.499 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => 245
+    [bot_id] => 1
+    [pattern] => ASSALAMU ALAIKUM
+    [thatpattern] => 
+    [topic] => 
+    [filename] => husna.aiml
+    [template] => Wa'alaikumsalam
+    [score] => 262
+    [current_that] => 
+    [aiml_id] => 245
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: assalamu (2 points), direct word match: alaikum (2 points)
+)
+ 
+-----------------------
+04-10-2019 17:28:01.18929[2][4] - Elapsed time: 0.067 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+04-10-2019 17:28:01.18949[4][4] - Elapsed time: 0.197 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:245 (ASSALAMU ALAIKUM) 
+-----------------------
+04-10-2019 17:28:01.18955[3][4] - Elapsed time: 0.067 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+04-10-2019 17:28:01.18961[2][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'ASSALAMU ALAIKUM' 
+-----------------------
+04-10-2019 17:28:01.18967[4][4] - Elapsed time: 0.059 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+04-10-2019 17:28:01.18973[4][4] - Elapsed time: 0.060 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+04-10-2019 17:28:01.18982[2][4] - Elapsed time: 0.085 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => 245
+    [category_id] => 245
+    [html_template] => 
+    [lookingfor] => ASSALAMU ALAIKUM
+    [pattern] => ASSALAMU ALAIKUM
+    [score] => 262
+    [stars] => Array
+        (
+        )
+
+    [template] => Wa'alaikumsalam
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => assalamu alaikum
+)
+ 
+-----------------------
+04-10-2019 17:28:01.18989[2][4] - Elapsed time: 0.074 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+04-10-2019 17:28:01.18996[2][4] - Elapsed time: 0.066 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+04-10-2019 17:28:01.19004[4][4] - Elapsed time: 0.083 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>Wa'alaikumsalam</text></template> 
+-----------------------
+04-10-2019 17:28:01.19022[2][4] - Elapsed time: 0.182 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+04-10-2019 17:28:01.19034[4][4] - Elapsed time: 0.114 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>Wa'alaikumsalam</text></template>
+ 
+-----------------------
+04-10-2019 17:28:01.19040[4][4] - Elapsed time: 0.065 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+04-10-2019 17:28:01.19048[2][4] - Elapsed time: 0.079 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+04-10-2019 17:28:01.19056[4][4] - Elapsed time: 0.080 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>Wa'alaikumsalam</text> 
+-----------------------
+04-10-2019 17:28:01.19075[4][4] - Elapsed time: 0.192 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+04-10-2019 17:28:01.19082[4][4] - Elapsed time: 0.069 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+04-10-2019 17:28:01.19088[2][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+04-10-2019 17:28:01.19095[4][4] - Elapsed time: 0.064 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Wa'alaikumsalam' to the response array. tag name is text 
+-----------------------
+04-10-2019 17:28:01.19101[2][4] - Elapsed time: 0.059 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+04-10-2019 17:28:01.19106[2][4] - Elapsed time: 0.058 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Wa'alaikumsalam
+)
+
+ 
+-----------------------
+04-10-2019 17:28:01.19112[4][4] - Elapsed time: 0.053 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+04-10-2019 17:28:01.19118[4][4] - Elapsed time: 0.060 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Wa'alaikumsalam' 
+-----------------------
+04-10-2019 17:28:01.19123[4][4] - Elapsed time: 0.057 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Wa'alaikumsalam' to the response array. tag name is template. 
+-----------------------
+04-10-2019 17:28:01.19129[2][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+04-10-2019 17:28:01.19135[2][4] - Elapsed time: 0.052 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Wa'alaikumsalam
+)
+
+ 
+-----------------------
+04-10-2019 17:28:01.19140[4][4] - Elapsed time: 0.052 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+04-10-2019 17:28:01.19145[4][4] - Elapsed time: 0.055 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Wa'alaikumsalam' 
+-----------------------
+04-10-2019 17:28:01.19151[4][4] - Elapsed time: 0.057 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Wa'alaikumsalam 
+-----------------------
+04-10-2019 17:28:01.19158[4][4] - Elapsed time: 0.067 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+04-10-2019 17:28:01.19163[4][4] - Elapsed time: 0.052 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+04-10-2019 17:28:01.19168[2][4] - Elapsed time: 0.050 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Wa'alaikumsalam' to the front of the [that_raw] array 
+-----------------------
+04-10-2019 17:28:01.19176[4][4] - Elapsed time: 0.076 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+04-10-2019 17:28:01.19191[2][4] - Elapsed time: 0.154 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Wa'alaikumsalam' to the front of the [that] array 
+-----------------------
+04-10-2019 17:28:01.19199[4][4] - Elapsed time: 0.084 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+04-10-2019 17:28:01.19211[4][4] - Elapsed time: 0.115 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Wa'alaikumsalam' 
+-----------------------
+04-10-2019 17:28:01.19218[4][4] - Elapsed time: 0.072 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Wa'alaikumsalam' 
+-----------------------
+04-10-2019 17:28:01.19231[4][4] - Elapsed time: 0.132 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'WA ALAIKUMSALAM' 
+-----------------------
+04-10-2019 17:28:01.19237[4][4] - Elapsed time: 0.061 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'WA ALAIKUMSALAM' 
+-----------------------
+04-10-2019 17:28:01.19246[2][4] - Elapsed time: 0.087 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Wa'alaikumsalam' to the front of the [parsed_template] array 
+-----------------------
+04-10-2019 17:28:01.19253[4][4] - Elapsed time: 0.067 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+04-10-2019 17:28:01.19261[2][4] - Elapsed time: 0.081 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Wa'alaikumsalam' to the front of the [template] array 
+-----------------------
+04-10-2019 17:28:01.19267[4][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+04-10-2019 17:28:01.19276[2][4] - Elapsed time: 0.086 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+04-10-2019 17:28:01.19285[3][4] - Elapsed time: 0.093 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `dbChatbotApk`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'assalamu alaikum',
+      'Wa\'alaikumsalam',
+      2,
+      'bee99bda4bf3d6a3d15187017e28112b',
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+04-10-2019 17:28:01.42800[4][4] - Elapsed time: 235.148 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+04-10-2019 17:28:01.42894[3][4] - Elapsed time: 0.943 milliseconds
+[display_conversation.php][get_conversation_to_display][61]
+get_conversation SQL: SELECT * FROM `dbChatbotApk`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  
+-----------------------
+04-10-2019 17:28:01.43008[2][4] - Elapsed time: 1.137 milliseconds
+[display_conversation.php][get_conversation_to_display][79]
+Found '1' lines of conversation 
+-----------------------
+04-10-2019 17:28:01.43019[4][4] - Elapsed time: 0.108 milliseconds
+[display_conversation.php][get_conversation][94]
+Processing conversation as json 
+-----------------------
+04-10-2019 17:28:01.43025[2][4] - Elapsed time: 0.067 milliseconds
+[display_conversation.php][get_json][152]
+Outputting response as JSON 
+-----------------------
+04-10-2019 17:28:01.43036[4][4] - Elapsed time: 0.102 milliseconds
+[display_conversation.php][get_json][166]
+Returning JSON string: {"convo_id":"bee99bda4bf3d6a3d15187017e28112b","usersay":"assalamu alaikum","botsay":"Wa'alaikumsalam","botData":{"id":"245","bot_id":"1","pattern":"ASSALAMU ALAIKUM","thatpattern":"","topic":"","filename":"husna.aiml","template":"Wa'alaikumsalam","score":262,"current_that":"","aiml_id":"245","track_score":"current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: assalamu (2 points), direct word match: alaikum (2 points)"}} 
+-----------------------
+04-10-2019 17:28:01.43055[1][4] - Elapsed time: 0.196 milliseconds
+[word_censor.php][Called outside of function][65]
+PHP ERROR [Notice] -Undefined index: pgo_word_censor in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65 
+-----------------------
+04-10-2019 17:28:01.43094[1][4] - Elapsed time: 0.386 milliseconds
+[word_censor.php][Called outside of function][65]
+PHP ERROR [Warning] -Invalid argument supplied for foreach() in /opt/lampp/htdocs/husna/chatbot/addons/word_censor/word_censor.php on Line 65 
+-----------------------
+04-10-2019 17:28:01.43112[2][4] - Elapsed time: 0.182 milliseconds
+[conversation_start.php][Called outside of function][261]
+Closing Database 
+-----------------------
+04-10-2019 17:28:01.43126[0][4] - Elapsed time: 0.143 milliseconds
+[conversation_start.php][Called outside of function][267]
+Conversation Ending. Elapsed time: 566.457 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [conversation] => Array
+        (
+            [convo_id] => bee99bda4bf3d6a3d15187017e28112b
+            [format] => json
+            [bot_id] => 1
+            [user_id] => 2
+            [totallines] => 1
+            [user_name] => Seeker
+            [rawSay] => assalamu alaikum
+            [conversation_lines] => 
+            [remember_up_to] => 
+            [debugemail] => 
+            [debug_level] => 
+            [debugmode] => 1
+            [save_state] => 
+            [default_aiml_pattern] => 
+            [bot_parent_id] => 
+            [aimlData] => Array
+                (
+                    [id] => 245
+                    [bot_id] => 1
+                    [pattern] => ASSALAMU ALAIKUM
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => husna.aiml
+                    [template] => Wa'alaikumsalam
+                    [score] => 262
+                    [current_that] => 
+                    [aiml_id] => 245
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: assalamu (2 points), direct word match: alaikum (2 points)
+                )
+
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => ::1
+            [name] => Seeker
+        )
+
+    [say] => assalamu alaikum
+    [time_start] => 1570202880.8647
+    [aiml] => Array
+        (
+            [user_raw] => assalamu alaikum
+            [lookingfor] => ASSALAMU ALAIKUM
+            [category_id] => 245
+            [pattern] => ASSALAMU ALAIKUM
+            [thatpattern] => 
+            [template] => Wa'alaikumsalam
+            [html_template] => 
+            [topic] => 
+            [score] => 262
+            [aiml_id] => 245
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Wa'alaikumsalam
+        )
+
+    [user_say] => Array
+        (
+            [1] => ASSALAMU ALAIKUM
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => assalamu alaikum
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Wa'alaikumsalam
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => WA ALAIKUMSALAM
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Wa'alaikumsalam
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => Wa'alaikumsalam
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => {"convo_id":"bee99bda4bf3d6a3d15187017e28112b","usersay":"assalamu alaikum","botsay":"Wa'alaikumsalam","botData":{"id":"245","bot_id":"1","pattern":"ASSALAMU ALAIKUM","thatpattern":"","topic":"","filename":"husna.aiml","template":"Wa'alaikumsalam","score":262,"current_that":"","aiml_id":"245","track_score":"current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: assalamu (2 points), direct word match: alaikum (2 points)"}}
+)
+
+-----------------------
+Total execution time: 566.457 Milliseconds. Goodbye.
